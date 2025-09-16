@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 422576593
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 24af50266a8d8559af29504c4b21e30f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 24af50266a8d8559af29504c4b21e30f
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/51.supernova/supernova_mid47_face_a_drums_snare_a.ogg
+- Assets/Audio/51.supernova/supernova_mid49_face_b_lead_lead_b2.ogg
+- Assets/Audio/51.supernova/supernova_mid55_face_b_bass_bass_b2.ogg
+- Assets/Audio/51.supernova/supernova_mid40_face_a_drums_crash_a.ogg
+- Assets/Audio/51.supernova/supernova_mid57_face_b_drums_kick_b.ogg
+- Assets/Audio/51.supernova/supernova_mid51_face_b_lead_lead_b4.ogg
+- Assets/Audio/51.supernova/supernova_mid53_face_b_bass_bass_b4.ogg
+- Assets/Audio/51.supernova/supernova_mid36_face_a_lead_lead_a1.ogg
+- Assets/Audio/51.supernova/51.Supernova.ogg
+- Assets/Audio/51.supernova/supernova_mid37_face_a_lead_lead_a2.ogg
+- Assets/Audio/51.supernova/supernova_mid58_face_b_drums_hihat_b.ogg
+- Assets/Audio/51.supernova/supernova_mid41_face_a_bass_bass_a4.ogg
+- Assets/Audio/51.supernova/supernova_mid54_face_b_bass_bass_b1.ogg
+- Assets/Audio/51.supernova/supernova_mid38_face_a_lead_lead_a3.ogg
+- Assets/Audio/51.supernova/supernova_mid50_face_b_lead_lead_b3.ogg
+- Assets/Audio/51.supernova/supernova_mid39_face_a_lead_lead_a4.ogg
+- Assets/Audio/51.supernova/supernova_mid42_face_a_bass_bass_a1.ogg
+- Assets/Audio/51.supernova/supernova_mid56_face_b_bass_bass_b3.ogg
+- Assets/Audio/51.supernova/supernova_mid45_face_a_drums_kick_a.ogg
+- Assets/Audio/51.supernova/supernova_mid43_face_a_bass_bass_a2.ogg
+- Assets/Audio/51.supernova/supernova_mid46_face_a_drums_hihat_a.ogg
+- Assets/Audio/51.supernova/supernova_mid59_face_b_drums_snare_b.ogg
+- Assets/Audio/51.supernova/supernova_mid48_face_b_lead_lead_b1.ogg
+- Assets/Audio/51.supernova/supernova_mid44_face_a_bass_bass_a3.ogg
+- Assets/Audio/51.supernova/supernova_mid52_face_b_fx_outro_b.ogg
+Dependencies: []

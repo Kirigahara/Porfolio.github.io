@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3318453908
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7fffd67ea3cec81cdc716db29ed71d6b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7fffd67ea3cec81cdc716db29ed71d6b
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/50.SlowSamba/slowsamba_mid38_face_a_drums_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid42_face_a_fx1_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid39_face_a_drums_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid57_face_b_lead_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid56_face_b_lead_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid53_face_b_drums_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid36_face_a_bass_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid40_face_a_drums_03.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid47_face_a_lead_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid41_face_a_fx1_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid37_face_a_bass_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid59_face_b_lead_04.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid51_face_b_bass_04.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid43_face_a_fx2_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid49_face_b_bass_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid44_face_a_fx2_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid50_face_b_bass_03.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid45_face_a_fx3_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid58_face_b_lead_03.ogg
+- Assets/Audio/50.SlowSamba/50.Slow Samba.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid46_face_a_lead_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid48_face_b_bass_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid55_face_b_fx_02.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid52_face_b_drums_01.ogg
+- Assets/Audio/50.SlowSamba/slowsamba_mid54_face_b_fx_01.ogg
+Dependencies: []

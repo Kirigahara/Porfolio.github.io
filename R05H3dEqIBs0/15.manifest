@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 1179713170
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: eb9ec17659b1dc52f2269ffa4c34c9fd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: eb9ec17659b1dc52f2269ffa4c34c9fd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/15.darkcircus/darkcircus_mid36_face_a_lead_intro.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid38_face_a_fx_fxclown.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid53_face_b_lead_melo9.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid45_face_a_drums_kick.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid51_face_b_lead_melo7.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid56_face_b_lead_melo12.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid48_face_b_fx_fxchainsaw.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid49_face_b_fx_fxlaught.ogg
+- Assets/Audio/15.darkcircus/15.Dark Circus.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid37_face_a_fx_fxscream.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid41_face_a_lead_melo3.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid47_face_a_drums_snare.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid55_face_b_lead_melo11.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid43_face_a_lead_melo5.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid42_face_a_lead_melo4.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid40_face_a_lead_melo2.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid44_face_a_lead_melo6.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid57_face_b_drums_kick.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid59_face_b_drums_snare.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid54_face_b_lead_melo10.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid50_face_b_fx_fxlaught.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid39_face_a_lead_melo1.ogg
+- Assets/Audio/15.darkcircus/darkcircus_mid52_face_b_lead_melo8.ogg
+Dependencies: []

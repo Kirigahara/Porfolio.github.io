@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 1192786455
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 44b278f28ac6e8e5b798f82dc72bbe3b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 44b278f28ac6e8e5b798f82dc72bbe3b
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/33.coffeeshop/coffeeshop_mid52_face_b_drums_snare.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid47_face_a_lead_2.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid39_face_a_drums_openhat.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid40_face_a_drums_snare.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid55_face_b_fx_3.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid49_face_b_drums_hat.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid37_face_a_drums_hat.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid38_face_a_drums_kick.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid36_face_a_drums_crash.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid43_face_a_fx1_3.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid58_face_b_lead_3.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid54_face_b_fx_2.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid53_face_b_fx_1.ogg
+- Assets/Audio/33.coffeeshop/33.Coffee Shop.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid50_face_b_drums_kick.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid45_face_a_fx_2.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid44_face_a_fx_1.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid46_face_a_lead_1.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid42_face_a_fx1_2.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid41_face_a_fx1_1.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid57_face_b_lead_2.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid56_face_b_lead_1.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid51_face_b_drums_openhat.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid48_face_b_drums_crash.ogg
+- Assets/Audio/33.coffeeshop/coffeeshop_mid59_face_b_lead_4.ogg
+Dependencies: []

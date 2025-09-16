@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 1918034982
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a65aabca724ff308e10865c50d3b3459
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a65aabca724ff308e10865c50d3b3459
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/41.guapo/guapo_mid51_face_b_bass_melo8.ogg
+- Assets/Audio/41.guapo/guapo_mid54_face_b_lead_lead1.ogg
+- Assets/Audio/41.guapo/guapo_mid49_face_b_bass_melo6.ogg
+- Assets/Audio/41.guapo/guapo_mid37_face_a_bass_melo2.ogg
+- Assets/Audio/41.guapo/guapo_mid57_face_b_drums_kick.ogg
+- Assets/Audio/41.guapo/41.Guapo.ogg
+- Assets/Audio/41.guapo/guapo_mid52_face_b_fx_vocal5.ogg
+- Assets/Audio/41.guapo/guapo_mid43_face_a_lead_vocal2.ogg
+- Assets/Audio/41.guapo/guapo_mid44_face_a_lead_vocal3.ogg
+- Assets/Audio/41.guapo/guapo_mid48_face_b_bass_melo5.ogg
+- Assets/Audio/41.guapo/guapo_mid47_face_a_drums_hihat.ogg
+- Assets/Audio/41.guapo/guapo_mid42_face_a_lead_vocal1.ogg
+- Assets/Audio/41.guapo/guapo_mid53_face_b_lead_lead4.ogg
+- Assets/Audio/41.guapo/guapo_mid39_face_a_bass_melo4.ogg
+- Assets/Audio/41.guapo/guapo_mid38_face_a_bass_melo3.ogg
+- Assets/Audio/41.guapo/guapo_mid41_face_a_lead_vocal4.ogg
+- Assets/Audio/41.guapo/guapo_mid55_face_b_lead_lead2.ogg
+- Assets/Audio/41.guapo/guapo_mid58_face_b_drums_snare.ogg
+- Assets/Audio/41.guapo/guapo_mid40_face_a_fx_crash.ogg
+- Assets/Audio/41.guapo/guapo_mid46_face_a_drums_snare.ogg
+- Assets/Audio/41.guapo/guapo_mid45_face_a_drums_kick.ogg
+- Assets/Audio/41.guapo/guapo_mid59_face_b_drums_hihat.ogg
+- Assets/Audio/41.guapo/guapo_mid50_face_b_bass_melo7.ogg
+- Assets/Audio/41.guapo/guapo_mid36_face_a_bass_melo1.ogg
+- Assets/Audio/41.guapo/guapo_mid56_face_b_lead_lead3.ogg
+Dependencies: []

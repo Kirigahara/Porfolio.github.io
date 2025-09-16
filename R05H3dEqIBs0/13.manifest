@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 2517852603
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d755fbaaac5d8112894bf17e80572de5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d755fbaaac5d8112894bf17e80572de5
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/13.society/society_mid51_face_b_drums_kicksnare.ogg
+- Assets/Audio/13.society/society_mid58_face_b_lead_saucesamourai4.ogg
+- Assets/Audio/13.society/society_mid57_face_b_lead_saucesamourai3.ogg
+- Assets/Audio/13.society/13.Society.ogg
+- Assets/Audio/13.society/society_mid40_face_a_drums_tom1.ogg
+- Assets/Audio/13.society/society_mid50_face_b_drums_kick.ogg
+- Assets/Audio/13.society/society_mid46_face_a_lead_saucesamourai4.ogg
+- Assets/Audio/13.society/society_mid55_face_b_lead_saucesamourai2.ogg
+- Assets/Audio/13.society/society_mid44_face_a_lead_saucesamourai2bis.ogg
+- Assets/Audio/13.society/society_mid39_face_a_drums_kicksnare2.ogg
+- Assets/Audio/13.society/society_mid41_face_a_drums_tom2.ogg
+- Assets/Audio/13.society/society_mid36_face_a_drums_hat2.ogg
+- Assets/Audio/13.society/society_mid52_face_b_drums_kicksnare2.ogg
+- Assets/Audio/13.society/society_mid38_face_a_drums_kicksnare.ogg
+- Assets/Audio/13.society/society_mid54_face_b_lead_saucesamourai1.ogg
+- Assets/Audio/13.society/society_mid56_face_b_lead_saucesamourai2bis.ogg
+- Assets/Audio/13.society/society_mid47_face_a_lead_saucesamourai4bis.ogg
+- Assets/Audio/13.society/society_mid45_face_a_lead_saucesamourai3.ogg
+- Assets/Audio/13.society/society_mid48_face_b_drums_hat.ogg
+- Assets/Audio/13.society/society_mid49_face_b_drums_hat2.ogg
+- Assets/Audio/13.society/society_mid37_face_a_drums_kick.ogg
+- Assets/Audio/13.society/society_mid43_face_a_lead_saucesamourai2.ogg
+- Assets/Audio/13.society/society_mid42_face_a_lead_saucesamourai1.ogg
+- Assets/Audio/13.society/society_mid53_face_b_drums_tom.ogg
+- Assets/Audio/13.society/society_mid59_face_b_lead_saucesamourai4bis.ogg
+Dependencies: []

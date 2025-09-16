@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 1144810687
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2a06d22c13e57e526120e6fef0617b9b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2a06d22c13e57e526120e6fef0617b9b
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid42_face_a_drums_kicksnare2.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid36_face_a_bass_sub1.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid44_face_a_lead_lead1.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid53_face_b_drums_hat.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid47_face_a_lead_lead4.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid59_face_b_lead_lead4.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid54_face_b_drums_kick.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid48_face_b_bass_chilibass1.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid52_face_b_drums_contrekick.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid46_face_a_lead_lead3.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid58_face_b_lead_lead3.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid40_face_a_drums_kick.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid57_face_b_lead_lead2.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid37_face_a_bass_sub2.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid51_face_b_bass_chilibass4.ogg
+- Assets/Audio/30.chilliconvalley/30.Chillicon Valley.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid50_face_b_bass_chilibass3.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid55_face_b_drums_kicksnare.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid49_face_b_bass_chilibass2.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid45_face_a_lead_lead2.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid39_face_a_drums_hat.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid41_face_a_drums_kicksnare.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid56_face_b_lead_lead1.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid38_face_a_bass_sub3.ogg
+- Assets/Audio/30.chilliconvalley/chiliconvalley_mid43_face_a_fx_upvocal.ogg
+Dependencies: []

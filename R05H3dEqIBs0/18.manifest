@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 921694195
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b07937e98d3e587de97b8709df3bb048
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b07937e98d3e587de97b8709df3bb048
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/18.backstronger/backstronger_mid38_face_a_lead_vocal_3.ogg
+- Assets/Audio/18.backstronger/backstronger_mid41_face_a_lead_vocal_4.ogg
+- Assets/Audio/18.backstronger/backstronger_mid44_face_a_fx_impact.ogg
+- Assets/Audio/18.backstronger/backstronger_mid43_face_a_bass_melo_2.ogg
+- Assets/Audio/18.backstronger/backstronger_mid45_face_a_drums_kick.ogg
+- Assets/Audio/18.backstronger/18.Back Stronger.ogg
+- Assets/Audio/18.backstronger/backstronger_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/18.backstronger/backstronger_mid36_face_a_lead_vocal_1.ogg
+- Assets/Audio/18.backstronger/backstronger_mid37_face_a_lead_vocal_2.ogg
+- Assets/Audio/18.backstronger/backstronger_mid39_face_a_bass_melo_3.ogg
+- Assets/Audio/18.backstronger/backstronger_mid40_face_a_bass_melo_4.ogg
+- Assets/Audio/18.backstronger/backstronger_mid47_face_a_drums_snare.ogg
+- Assets/Audio/18.backstronger/backstronger_mid42_face_a_bass_melo_1.ogg
+Dependencies: []

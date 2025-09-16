@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3691879713
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c65ea3259a6758521d526cdc18b83eaf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c65ea3259a6758521d526cdc18b83eaf
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/38.flexin/flexin_mid44_face_a_bass_bass3.ogg
+- Assets/Audio/38.flexin/flexin_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/38.flexin/flexin_mid52_face_b_lead_lead6.ogg
+- Assets/Audio/38.flexin/flexin_mid42_face_a_bass_bass1.ogg
+- Assets/Audio/38.flexin/flexin_mid38_face_a_fx1_adlib2.ogg
+- Assets/Audio/38.flexin/flexin_mid48_face_b_lead_lead3.ogg
+- Assets/Audio/38.flexin/flexin_mid54_face_b_bass_bass4.ogg
+- Assets/Audio/38.flexin/38.Flexin'.ogg
+- Assets/Audio/38.flexin/flexin_mid41_face_a_fx_roll.ogg
+- Assets/Audio/38.flexin/flexin_mid51_face_b_lead_lead5.ogg
+- Assets/Audio/38.flexin/flexin_mid50_face_b_fx1_adlib3.ogg
+- Assets/Audio/38.flexin/flexin_mid53_face_b_fx1_adlib4.ogg
+- Assets/Audio/38.flexin/flexin_mid56_face_b_bass_bass6.ogg
+- Assets/Audio/38.flexin/flexin_mid39_face_a_lead_lead2.ogg
+- Assets/Audio/38.flexin/flexin_mid40_face_a_fx1_adlib3.ogg
+- Assets/Audio/38.flexin/flexin_mid45_face_a_drums_kick.ogg
+- Assets/Audio/38.flexin/flexin_mid49_face_b_lead_lead4.ogg
+- Assets/Audio/38.flexin/flexin_mid59_face_b_drums_snare.ogg
+- Assets/Audio/38.flexin/flexin_mid43_face_a_bass_bass2.ogg
+- Assets/Audio/38.flexin/flexin_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/38.flexin/flexin_mid55_face_b_bass_bass5.ogg
+- Assets/Audio/38.flexin/flexin_mid37_face_a_fx1_adlib1.ogg
+- Assets/Audio/38.flexin/flexin_mid36_face_a_lead_lead1.ogg
+- Assets/Audio/38.flexin/flexin_mid47_face_a_drums_snare.ogg
+- Assets/Audio/38.flexin/flexin_mid57_face_b_drums_kick.ogg
+Dependencies: []

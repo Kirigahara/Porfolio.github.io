@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2624651994
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9112741fccb9e0f8243ddc74ce238ac2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9112741fccb9e0f8243ddc74ce238ac2
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/39.Float/float_mid38_bass_3.ogg
+- Assets/Audio/39.Float/float_mid45_fx_4.ogg
+- Assets/Audio/39.Float/float_mid47_lead_2.ogg
+- Assets/Audio/39.Float/39.Float.ogg
+- Assets/Audio/39.Float/float_mid41_drums_2.ogg
+- Assets/Audio/39.Float/float_mid44_fx_3.ogg
+- Assets/Audio/39.Float/float_mid37_bass_2.ogg
+- Assets/Audio/39.Float/float_mid36_bass_1.ogg
+- Assets/Audio/39.Float/float_mid43_fx_2.ogg
+- Assets/Audio/39.Float/float_mid40_drums_1.ogg
+- Assets/Audio/39.Float/float_mid39_bass_4.ogg
+- Assets/Audio/39.Float/float_mid42_fx_1.ogg
+- Assets/Audio/39.Float/float_mid46_lead_1.ogg
+Dependencies: []

@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3447010016
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9341fa9165289e9220cbb23206fa6b94
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9341fa9165289e9220cbb23206fa6b94
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/37.elevator/elevator_mid54_face_b_fx2.ogg
+- Assets/Audio/37.elevator/37.Elevator.ogg
+- Assets/Audio/37.elevator/elevator_mid50_face_b_drums_kick.ogg
+- Assets/Audio/37.elevator/elevator_mid49_face_b_drums_hatroll.ogg
+- Assets/Audio/37.elevator/elevator_mid44_face_a_fx_1.ogg
+- Assets/Audio/37.elevator/elevator_mid37_face_a_basse_2.ogg
+- Assets/Audio/37.elevator/elevator_mid57_face_b_lead_2.ogg
+- Assets/Audio/37.elevator/elevator_mid58_face_b_lead_3.ogg
+- Assets/Audio/37.elevator/elevator_mid38_face_a_basse_3.ogg
+- Assets/Audio/37.elevator/elevator_mid51_face_b_drums_openhat.ogg
+- Assets/Audio/37.elevator/elevator_mid40_face_a_drums_hat.ogg
+- Assets/Audio/37.elevator/elevator_mid52_face_b_drums_snare.ogg
+- Assets/Audio/37.elevator/elevator_mid42_face_a_drums_kick.ogg
+- Assets/Audio/37.elevator/elevator_mid47_face_a_lead_2.ogg
+- Assets/Audio/37.elevator/elevator_mid45_face_a_fx_2.ogg
+- Assets/Audio/37.elevator/elevator_mid55_face_b_fx_1.ogg
+- Assets/Audio/37.elevator/elevator_mid56_face_b_lead_1.ogg
+- Assets/Audio/37.elevator/elevator_mid36_face_a_basse_1.ogg
+- Assets/Audio/37.elevator/elevator_mid39_face_a_basse_4.ogg
+- Assets/Audio/37.elevator/elevator_mid48_face_b_drums_hat.ogg
+- Assets/Audio/37.elevator/elevator_mid53_face_b_fx1_1.ogg
+- Assets/Audio/37.elevator/elevator_mid43_face_a_drums_snare.ogg
+- Assets/Audio/37.elevator/elevator_mid59_face_b_lead_4.ogg
+- Assets/Audio/37.elevator/elevator_mid46_face_a_lead_1.ogg
+- Assets/Audio/37.elevator/elevator_mid41_face_a_drums_hatroll.ogg
+Dependencies: []

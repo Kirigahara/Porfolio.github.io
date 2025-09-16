@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 3721658958
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 19483817770844caeb2f25bb4376b50f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 19483817770844caeb2f25bb4376b50f
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/4.closer/closer_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/4.closer/closer_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/4.closer/closer_mid57_face_b_drums_kick.ogg
+- Assets/Audio/4.closer/closer_mid43_face_a_bass_bass2_a.ogg
+- Assets/Audio/4.closer/4.Closer.ogg
+- Assets/Audio/4.closer/closer_mid42_face_a_bass_bass1_a.ogg
+- Assets/Audio/4.closer/closer_mid48_face_b_lead_lead1_b.ogg
+- Assets/Audio/4.closer/closer_mid49_face_b_lead_lead2_b.ogg
+- Assets/Audio/4.closer/closer_mid39_face_a_fx_drop_a.ogg
+- Assets/Audio/4.closer/closer_mid59_face_b_drums_snare.ogg
+- Assets/Audio/4.closer/closer_mid52_face_b_lead_lead4_b.ogg
+- Assets/Audio/4.closer/closer_mid38_face_a_lead_lead3_a.ogg
+- Assets/Audio/4.closer/closer_mid36_face_a_lead_lead1_a.ogg
+- Assets/Audio/4.closer/closer_mid41_face_a_bass_bass4_a.ogg
+- Assets/Audio/4.closer/closer_mid37_face_a_lead_lead2_a.ogg
+- Assets/Audio/4.closer/closer_mid44_face_a_bass_bass3_a.ogg
+- Assets/Audio/4.closer/closer_mid51_face_b_lead_lead3_b.ogg
+- Assets/Audio/4.closer/closer_mid47_face_a_drums_snare.ogg
+- Assets/Audio/4.closer/closer_mid56_face_b_bass_bass3_b.ogg
+- Assets/Audio/4.closer/closer_mid55_face_b_bass_bass2_b.ogg
+- Assets/Audio/4.closer/closer_mid40_face_a_lead_lead4_a.ogg
+- Assets/Audio/4.closer/closer_mid54_face_b_bass_bass1_b.ogg
+- Assets/Audio/4.closer/closer_mid50_face_b_fx_crash_b.ogg
+- Assets/Audio/4.closer/closer_mid53_face_b_bass_bass4_b.ogg
+- Assets/Audio/4.closer/closer_mid45_face_a_drums_kick.ogg
+Dependencies: []

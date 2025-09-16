@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 4042757483
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 14d60d80d1dae534a93ef94eb1f35215
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 14d60d80d1dae534a93ef94eb1f35215
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/17.anewstart/anewstart_mid53_face_b_bass_hook_3.ogg
+- Assets/Audio/17.anewstart/anewstart_mid44_face_a_bass_hook_4.ogg
+- Assets/Audio/17.anewstart/anewstart_mid41_face_a_bass_hook_3.ogg
+- Assets/Audio/17.anewstart/anewstart_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/17.anewstart/anewstart_mid55_face_b_fx1_tom.ogg
+- Assets/Audio/17.anewstart/anewstart_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/17.anewstart/anewstart_mid48_face_b_lead_chords_1.ogg
+- Assets/Audio/17.anewstart/anewstart_mid59_face_b_drums_snare.ogg
+- Assets/Audio/17.anewstart/anewstart_mid39_face_a_bass_hook_1.ogg
+- Assets/Audio/17.anewstart/anewstart_mid52_face_b_bass_hook_2.ogg
+- Assets/Audio/17.anewstart/anewstart_mid36_face_a_lead_chords_1.ogg
+- Assets/Audio/17.anewstart/anewstart_mid38_face_a_lead_chords_3.ogg
+- Assets/Audio/17.anewstart/17.A New Start.ogg
+- Assets/Audio/17.anewstart/anewstart_mid50_face_b_lead_chords_3.ogg
+- Assets/Audio/17.anewstart/anewstart_mid37_face_a_lead_chords_2.ogg
+- Assets/Audio/17.anewstart/anewstart_mid47_face_a_drums_snare.ogg
+- Assets/Audio/17.anewstart/anewstart_mid40_face_a_bass_hook_2.ogg
+- Assets/Audio/17.anewstart/anewstart_mid42_face_a_fx_fx.ogg
+- Assets/Audio/17.anewstart/anewstart_mid54_face_b_fx_crash.ogg
+- Assets/Audio/17.anewstart/anewstart_mid57_face_b_drums_kick.ogg
+- Assets/Audio/17.anewstart/anewstart_mid45_face_a_drums_kick.ogg
+- Assets/Audio/17.anewstart/anewstart_mid49_face_b_lead_chords_2.ogg
+- Assets/Audio/17.anewstart/anewstart_mid56_face_b_bass_hook_4.ogg
+- Assets/Audio/17.anewstart/anewstart_mid51_face_b_bass_hook_1.ogg
+- Assets/Audio/17.anewstart/anewstart_mid43_face_a_fx1_tom.ogg
+Dependencies: []
