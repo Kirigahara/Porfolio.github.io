@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1891852993
+CRC: 1918034982
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1bc2525b67dd9704101fda0ed01a54f5
+    Hash: a65aabca724ff308e10865c50d3b3459
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 1bc2525b67dd9704101fda0ed01a54f5
+    Hash: a65aabca724ff308e10865c50d3b3459
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -21,6 +21,7 @@ Assets:
 - Assets/Audio/41.guapo/guapo_mid49_face_b_bass_melo6.ogg
 - Assets/Audio/41.guapo/guapo_mid37_face_a_bass_melo2.ogg
 - Assets/Audio/41.guapo/guapo_mid57_face_b_drums_kick.ogg
+- Assets/Audio/41.guapo/41.Guapo.ogg
 - Assets/Audio/41.guapo/guapo_mid52_face_b_fx_vocal5.ogg
 - Assets/Audio/41.guapo/guapo_mid43_face_a_lead_vocal2.ogg
 - Assets/Audio/41.guapo/guapo_mid44_face_a_lead_vocal3.ogg

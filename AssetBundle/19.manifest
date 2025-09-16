@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3347333406
+CRC: 1126964206
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2d672eaa61a713c6af2f69bea2ac8e76
+    Hash: 109116b40f4642a183c32dbcd9309a79
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 2d672eaa61a713c6af2f69bea2ac8e76
+    Hash: 109116b40f4642a183c32dbcd9309a79
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -17,6 +17,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Audio/19.basshysteria/basshysteria_mid36_face_a_bass.ogg
+- Assets/Audio/19.basshysteria/19.Bass Hysteria.ogg
 - Assets/Audio/19.basshysteria/basshysteria_mid42_face_a_drums_kick.ogg
 - Assets/Audio/19.basshysteria/basshysteria_mid50_face_b_drums_hat.ogg
 - Assets/Audio/19.basshysteria/basshysteria_mid39_face_a_drums_break_3.ogg

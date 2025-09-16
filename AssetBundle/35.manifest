@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2545156531
+CRC: 3414041139
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0ea090db62e4c698b4bbd3640fc89de5
+    Hash: a92546ceda3b2e41605ee94add0fc19c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 0ea090db62e4c698b4bbd3640fc89de5
+    Hash: a92546ceda3b2e41605ee94add0fc19c
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -27,6 +27,7 @@ Assets:
 - Assets/Audio/35.Crosswalk/crosswalk_mid41_face_a_drums_02.ogg
 - Assets/Audio/35.Crosswalk/crosswalk_mid37_face_a_bass_02.ogg
 - Assets/Audio/35.Crosswalk/crosswalk_mid45_face_a_lead_02.ogg
+- Assets/Audio/35.Crosswalk/35.Crosswalk.ogg
 - Assets/Audio/35.Crosswalk/crosswalk_mid50_face_b_bass_03.ogg
 - Assets/Audio/35.Crosswalk/crosswalk_mid52_face_b_drums_01.ogg
 - Assets/Audio/35.Crosswalk/crosswalk_mid57_face_b_lead_02.ogg

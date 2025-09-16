@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 129919896
+CRC: 3447010016
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bbfeb15d8e7ff0c819fad32827bf8439
+    Hash: 9341fa9165289e9220cbb23206fa6b94
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: bbfeb15d8e7ff0c819fad32827bf8439
+    Hash: 9341fa9165289e9220cbb23206fa6b94
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -17,6 +17,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Audio/37.elevator/elevator_mid54_face_b_fx2.ogg
+- Assets/Audio/37.elevator/37.Elevator.ogg
 - Assets/Audio/37.elevator/elevator_mid50_face_b_drums_kick.ogg
 - Assets/Audio/37.elevator/elevator_mid49_face_b_drums_hatroll.ogg
 - Assets/Audio/37.elevator/elevator_mid44_face_a_fx_1.ogg

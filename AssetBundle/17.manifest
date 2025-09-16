@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 4213720768
+CRC: 4042757483
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 66ac82bc3f7e4d76d7ad395a9ae6ce89
+    Hash: 14d60d80d1dae534a93ef94eb1f35215
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 66ac82bc3f7e4d76d7ad395a9ae6ce89
+    Hash: 14d60d80d1dae534a93ef94eb1f35215
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -28,6 +28,7 @@ Assets:
 - Assets/Audio/17.anewstart/anewstart_mid52_face_b_bass_hook_2.ogg
 - Assets/Audio/17.anewstart/anewstart_mid36_face_a_lead_chords_1.ogg
 - Assets/Audio/17.anewstart/anewstart_mid38_face_a_lead_chords_3.ogg
+- Assets/Audio/17.anewstart/17.A New Start.ogg
 - Assets/Audio/17.anewstart/anewstart_mid50_face_b_lead_chords_3.ogg
 - Assets/Audio/17.anewstart/anewstart_mid37_face_a_lead_chords_2.ogg
 - Assets/Audio/17.anewstart/anewstart_mid47_face_a_drums_snare.ogg

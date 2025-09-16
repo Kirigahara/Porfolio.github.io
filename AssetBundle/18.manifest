@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1330108112
+CRC: 921694195
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9dc42bf534b9241068cf0c5d765c51cb
+    Hash: b07937e98d3e587de97b8709df3bb048
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 9dc42bf534b9241068cf0c5d765c51cb
+    Hash: b07937e98d3e587de97b8709df3bb048
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -21,6 +21,7 @@ Assets:
 - Assets/Audio/18.backstronger/backstronger_mid44_face_a_fx_impact.ogg
 - Assets/Audio/18.backstronger/backstronger_mid43_face_a_bass_melo_2.ogg
 - Assets/Audio/18.backstronger/backstronger_mid45_face_a_drums_kick.ogg
+- Assets/Audio/18.backstronger/18.Back Stronger.ogg
 - Assets/Audio/18.backstronger/backstronger_mid46_face_a_drums_hihat.ogg
 - Assets/Audio/18.backstronger/backstronger_mid36_face_a_lead_vocal_1.ogg
 - Assets/Audio/18.backstronger/backstronger_mid37_face_a_lead_vocal_2.ogg

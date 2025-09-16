@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1812929344
+CRC: 515962805
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f312d21c8771ce108bd9b9252fcd4642
+    Hash: f5612000bb905a5943f4eacd8d1567fc
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f312d21c8771ce108bd9b9252fcd4642
+    Hash: f5612000bb905a5943f4eacd8d1567fc
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -26,6 +26,7 @@ Assets:
 - Assets/Audio/48.rundat/rundat_mid41_face_a_lead_vocal_4.ogg
 - Assets/Audio/48.rundat/rundat_mid36_face_a_lead_vocal_1.ogg
 - Assets/Audio/48.rundat/rundat_mid39_face_a_bass_melo_3.ogg
+- Assets/Audio/48.rundat/48.Run Dat.ogg
 - Assets/Audio/48.rundat/rundat_mid42_face_a_bass_melo_1.ogg
 - Assets/Audio/48.rundat/rundat_mid44_face_a_fx_breathe.ogg
 Dependencies: []

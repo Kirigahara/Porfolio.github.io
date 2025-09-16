@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1699978330
+CRC: 3318453908
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 99cb481f1c53279c39b2e4fa50b463f2
+    Hash: 7fffd67ea3cec81cdc716db29ed71d6b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 99cb481f1c53279c39b2e4fa50b463f2
+    Hash: 7fffd67ea3cec81cdc716db29ed71d6b
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -35,6 +35,7 @@ Assets:
 - Assets/Audio/50.SlowSamba/slowsamba_mid50_face_b_bass_03.ogg
 - Assets/Audio/50.SlowSamba/slowsamba_mid45_face_a_fx3_01.ogg
 - Assets/Audio/50.SlowSamba/slowsamba_mid58_face_b_lead_03.ogg
+- Assets/Audio/50.SlowSamba/50.Slow Samba.ogg
 - Assets/Audio/50.SlowSamba/slowsamba_mid46_face_a_lead_01.ogg
 - Assets/Audio/50.SlowSamba/slowsamba_mid48_face_b_bass_01.ogg
 - Assets/Audio/50.SlowSamba/slowsamba_mid55_face_b_fx_02.ogg

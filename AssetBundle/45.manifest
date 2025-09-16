@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3447429601
+CRC: 216895656
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7425e9950bbad897cacc5e21329e0fe6
+    Hash: c92990ed4ef46bb58dcf054c801449b3
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 7425e9950bbad897cacc5e21329e0fe6
+    Hash: c92990ed4ef46bb58dcf054c801449b3
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -34,6 +34,7 @@ Assets:
 - Assets/Audio/45.JazzyMood/jazzymood_mid43_face_a_drums_snare.ogg
 - Assets/Audio/45.JazzyMood/jazzymood_mid46_face_a_lead_3.ogg
 - Assets/Audio/45.JazzyMood/jazzymood_mid49_face_b_bass_2.ogg
+- Assets/Audio/45.JazzyMood/45.Jazzy Mood.ogg
 - Assets/Audio/45.JazzyMood/jazzymood_mid40_face_a_drums_hihat.ogg
 - Assets/Audio/45.JazzyMood/jazzymood_mid48_face_b_bass_1.ogg
 - Assets/Audio/45.JazzyMood/jazzymood_mid54_face_b_drums_snare.ogg

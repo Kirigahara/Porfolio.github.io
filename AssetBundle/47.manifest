@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3125496260
+CRC: 1037464382
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 335dc7dd534d9b8007572b7c6006536a
+    Hash: 3f28af9cd88612576b01a077060244b1
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 335dc7dd534d9b8007572b7c6006536a
+    Hash: 3f28af9cd88612576b01a077060244b1
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -32,6 +32,7 @@ Assets:
 - Assets/Audio/47.purelofi/purelofi_mid57_face_b_drums_kick.ogg
 - Assets/Audio/47.purelofi/purelofi_mid36_face_a_lead_melo1.ogg
 - Assets/Audio/47.purelofi/purelofi_mid39_face_a_lead_melo4.ogg
+- Assets/Audio/47.purelofi/47.Pure Lo-fi.ogg
 - Assets/Audio/47.purelofi/purelofi_mid48_face_b_lead_melo9.ogg
 - Assets/Audio/47.purelofi/purelofi_mid38_face_a_lead_melo3.ogg
 - Assets/Audio/47.purelofi/purelofi_mid44_face_a_lead_melo7.ogg

@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 334019535
+CRC: 2304266525
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2513f543c774a49b11daa53a016077fa
+    Hash: c6501ccf299116e846210195a456ee4a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 2513f543c774a49b11daa53a016077fa
+    Hash: c6501ccf299116e846210195a456ee4a
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -26,6 +26,7 @@ Assets:
 - Assets/Audio/1.astronautintheocean/astronautintheocean_mid43_face_a_lead_lead_8.ogg
 - Assets/Audio/1.astronautintheocean/astronautintheocean_mid46_face_a_drums_hihat.ogg
 - Assets/Audio/1.astronautintheocean/astronautintheocean_mid38_face_a_lead_lead_3.ogg
+- Assets/Audio/1.astronautintheocean/1.Astronaut in the Ocean.ogg
 - Assets/Audio/1.astronautintheocean/astronautintheocean_mid36_face_a_lead_lead_1.ogg
 - Assets/Audio/1.astronautintheocean/astronautintheocean_mid45_face_a_drums_kick.ogg
 Dependencies: []

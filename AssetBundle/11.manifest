@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1415623146
+CRC: 3161661412
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f8e904d6df0b9858797097ca9aaecb4f
+    Hash: 97f50a17440fb66411cb1567b03a4273
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f8e904d6df0b9858797097ca9aaecb4f
+    Hash: 97f50a17440fb66411cb1567b03a4273
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -28,4 +28,5 @@ Assets:
 - Assets/Audio/11.missyou/missyou_mid43_face_a_bass_vocal_5.ogg
 - Assets/Audio/11.missyou/missyou_mid46_face_a_fx_fx.ogg
 - Assets/Audio/11.missyou/missyou_mid40_face_a_lead_piano_4.ogg
+- Assets/Audio/11.missyou/11.Miss You.ogg
 Dependencies: []

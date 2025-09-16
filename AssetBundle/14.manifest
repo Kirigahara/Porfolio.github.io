@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2929545575
+CRC: 1475111896
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0fb33ec4dd70828985b039068f4d46e2
+    Hash: e00543aaa6018f4428bd2fbf5933bbde
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 0fb33ec4dd70828985b039068f4d46e2
+    Hash: e00543aaa6018f4428bd2fbf5933bbde
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -39,5 +39,6 @@ Assets:
 - Assets/Audio/14.unity/unity_mid52_face_b_bass_bass4_b.ogg
 - Assets/Audio/14.unity/unity_mid53_face_b_lead_lead4_b.ogg
 - Assets/Audio/14.unity/unity_mid56_face_b_fx_fx_b.ogg
+- Assets/Audio/14.unity/14.Unity.ogg
 - Assets/Audio/14.unity/unity_mid48_face_b_lead_lead1_b.ogg
 Dependencies: []

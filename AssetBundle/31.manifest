@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1924111371
+CRC: 2090068612
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c7e66b9e3077453aacad1af10fe57a16
+    Hash: 9c69ca4a858edca905d7f4f4aa767b95
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: c7e66b9e3077453aacad1af10fe57a16
+    Hash: 9c69ca4a858edca905d7f4f4aa767b95
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -29,6 +29,7 @@ Assets:
 - Assets/Audio/31.classichouse/classichouse_mid37_face_a_bass_chords2.ogg
 - Assets/Audio/31.classichouse/classichouse_mid55_face_b_lead_lead2.ogg
 - Assets/Audio/31.classichouse/classichouse_mid59_face_b_drums_snare.ogg
+- Assets/Audio/31.classichouse/31.Classic House.ogg
 - Assets/Audio/31.classichouse/classichouse_mid51_face_b_bass_chords3.ogg
 - Assets/Audio/31.classichouse/classichouse_mid49_face_b_bass_chords2.ogg
 - Assets/Audio/31.classichouse/classichouse_mid58_face_b_drums_hihat.ogg

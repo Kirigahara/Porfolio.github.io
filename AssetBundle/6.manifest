@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1898789610
+CRC: 538466084
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 519c83013cbffaad792c5863bcc1b559
+    Hash: 4fefb556ce79bfb36cca50185b2d1386
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 519c83013cbffaad792c5863bcc1b559
+    Hash: 4fefb556ce79bfb36cca50185b2d1386
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -27,5 +27,6 @@ Assets:
 - Assets/Audio/6.despacito/despacito_mid40_face_a_lead_vocal_intro.ogg
 - Assets/Audio/6.despacito/despacito_mid45_face_a_drums_drums_1.ogg
 - Assets/Audio/6.despacito/despacito_mid47_face_a_drums_drums_3.ogg
+- Assets/Audio/6.despacito/6.Despacito.ogg
 - Assets/Audio/6.despacito/despacito_mid44_face_a_bass_melo_3.ogg
 Dependencies: []

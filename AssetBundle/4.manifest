@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2880890653
+CRC: 3721658958
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 03a753651e7b41f32f59b63286bf26e3
+    Hash: 19483817770844caeb2f25bb4376b50f
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 03a753651e7b41f32f59b63286bf26e3
+    Hash: 19483817770844caeb2f25bb4376b50f
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -20,6 +20,7 @@ Assets:
 - Assets/Audio/4.closer/closer_mid46_face_a_drums_hihat.ogg
 - Assets/Audio/4.closer/closer_mid57_face_b_drums_kick.ogg
 - Assets/Audio/4.closer/closer_mid43_face_a_bass_bass2_a.ogg
+- Assets/Audio/4.closer/4.Closer.ogg
 - Assets/Audio/4.closer/closer_mid42_face_a_bass_bass1_a.ogg
 - Assets/Audio/4.closer/closer_mid48_face_b_lead_lead1_b.ogg
 - Assets/Audio/4.closer/closer_mid49_face_b_lead_lead2_b.ogg

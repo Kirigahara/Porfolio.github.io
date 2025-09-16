@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2960163988
+CRC: 919731348
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d1363d5566e8fafa3016309c96fac92e
+    Hash: e3cf173eef75164923fbdbf3eb8b8864
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: d1363d5566e8fafa3016309c96fac92e
+    Hash: e3cf173eef75164923fbdbf3eb8b8864
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -21,6 +21,7 @@ Assets:
 - Assets/Audio/7.discozombie/discozombie_mid55_face_b_drums_tomfill.ogg
 - Assets/Audio/7.discozombie/discozombie_mid50_face_b_drums_kick.ogg
 - Assets/Audio/7.discozombie/discozombie_mid49_face_b_drums_hat.ogg
+- Assets/Audio/7.discozombie/7.Disco Zombie.ogg
 - Assets/Audio/7.discozombie/discozombie_mid38_face_a_drums_hat1.ogg
 - Assets/Audio/7.discozombie/discozombie_mid54_face_b_drums_tomdisco.ogg
 - Assets/Audio/7.discozombie/discozombie_mid41_face_a_drums_snare.ogg

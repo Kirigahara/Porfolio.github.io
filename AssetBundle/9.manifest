@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1976256672
+CRC: 1831204656
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2aac72dc166e8b052a9d12d7830e280e
+    Hash: 93539d8fc4ce20f5dfbd80709531005d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 2aac72dc166e8b052a9d12d7830e280e
+    Hash: 93539d8fc4ce20f5dfbd80709531005d
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -32,6 +32,7 @@ Assets:
 - Assets/Audio/9.happybirthdaytrapremix/happybirthdaytrapremix_mid58_face_b_drums_hihat.ogg
 - Assets/Audio/9.happybirthdaytrapremix/happybirthdaytrapremix_mid46_face_a_drums_hihat.ogg
 - Assets/Audio/9.happybirthdaytrapremix/happybirthdaytrapremix_mid40_face_a_fx_fx_intro.ogg
+- Assets/Audio/9.happybirthdaytrapremix/9.Happy Birthday - Trap Remix.ogg
 - Assets/Audio/9.happybirthdaytrapremix/happybirthdaytrapremix_mid47_face_a_drums_snare.ogg
 - Assets/Audio/9.happybirthdaytrapremix/happybirthdaytrapremix_mid54_face_b_lead_melo_13.ogg
 - Assets/Audio/9.happybirthdaytrapremix/happybirthdaytrapremix_mid50_face_b_lead_melo_11.ogg

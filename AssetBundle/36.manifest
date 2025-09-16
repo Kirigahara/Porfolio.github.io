@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3825601139
+CRC: 3887347116
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 25a0f1cd83cdbe6e4c47b1a1fc04e9f1
+    Hash: f6bbdeec3a5864acbcb4175836d0c63a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 25a0f1cd83cdbe6e4c47b1a1fc04e9f1
+    Hash: f6bbdeec3a5864acbcb4175836d0c63a
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -36,6 +36,7 @@ Assets:
 - Assets/Audio/36.dirtysanchez/dirtysanchez_mid38_face_a_bass_dirtybass3.ogg
 - Assets/Audio/36.dirtysanchez/dirtysanchez_mid37_face_a_bass_dirtybass2.ogg
 - Assets/Audio/36.dirtysanchez/dirtysanchez_mid45_face_a_fx_downup.ogg
+- Assets/Audio/36.dirtysanchez/36.Dirty Sanchez.ogg
 - Assets/Audio/36.dirtysanchez/dirtysanchez_mid55_face_b_drums_kick.ogg
 - Assets/Audio/36.dirtysanchez/dirtysanchez_mid51_face_b_bass_dirtybass4.ogg
 - Assets/Audio/36.dirtysanchez/dirtysanchez_mid52_face_b_bass_dirtybass5.ogg

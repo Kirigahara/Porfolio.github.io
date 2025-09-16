@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1194213929
+CRC: 333986680
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: af890063de96d0a9b24a6b4a28e1a564
+    Hash: fc6b734448bddee59e16be439c512318
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: af890063de96d0a9b24a6b4a28e1a564
+    Hash: fc6b734448bddee59e16be439c512318
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -17,6 +17,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Audio/24.blaze/blaze_mid42_face_a_bass_chords_2.ogg
+- Assets/Audio/24.blaze/24.Blaze.ogg
 - Assets/Audio/24.blaze/blaze_mid37_face_a_lead_vocal_1.ogg
 - Assets/Audio/24.blaze/blaze_mid38_face_a_lead_fill_4.ogg
 - Assets/Audio/24.blaze/blaze_mid41_face_a_lead_snare_2.ogg

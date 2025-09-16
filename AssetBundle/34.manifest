@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 993453880
+CRC: 2975523909
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 166bea06aea3b9b5a6fa6c17cd7ff221
+    Hash: 161d0aa3b52201bf211bc89804388914
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 166bea06aea3b9b5a6fa6c17cd7ff221
+    Hash: 161d0aa3b52201bf211bc89804388914
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -17,6 +17,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Audio/34.CrazyHouse__here/crazyhouse_mid36_face_a_bass_1.ogg
+- Assets/Audio/34.CrazyHouse__here/34.Crazy House.ogg
 - Assets/Audio/34.CrazyHouse__here/crazyhouse_mid41_face_a_drums_top.ogg
 - Assets/Audio/34.CrazyHouse__here/crazyhouse_mid40_face_a_drums_crash.ogg
 - Assets/Audio/34.CrazyHouse__here/crazyhouse_mid52_face_b_drums_1.ogg

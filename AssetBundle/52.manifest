@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2695390432
+CRC: 176258361
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 701258834b0077935943ae4924336279
+    Hash: 858d82b45de6bd8e88eb13302c47f7c3
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 701258834b0077935943ae4924336279
+    Hash: 858d82b45de6bd8e88eb13302c47f7c3
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -32,6 +32,7 @@ Assets:
 - Assets/Audio/52.walking/walking_mid44_face_a_bass_lead8.ogg
 - Assets/Audio/52.walking/walking_mid46_face_a_drums_hihat.ogg
 - Assets/Audio/52.walking/walking_mid50_face_b_bass_lead11.ogg
+- Assets/Audio/52.walking/52.Walking.ogg
 - Assets/Audio/52.walking/walking_mid48_face_b_bass_lead9.ogg
 - Assets/Audio/52.walking/walking_mid52_face_b_bass_lead13.ogg
 - Assets/Audio/52.walking/walking_mid38_face_a_bass_lead2.ogg

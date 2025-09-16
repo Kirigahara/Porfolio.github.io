@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2340390871
+CRC: 2517852603
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9e23e037d634e059e062cec866cf023b
+    Hash: d755fbaaac5d8112894bf17e80572de5
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 9e23e037d634e059e062cec866cf023b
+    Hash: d755fbaaac5d8112894bf17e80572de5
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -19,6 +19,7 @@ Assets:
 - Assets/Audio/13.society/society_mid51_face_b_drums_kicksnare.ogg
 - Assets/Audio/13.society/society_mid58_face_b_lead_saucesamourai4.ogg
 - Assets/Audio/13.society/society_mid57_face_b_lead_saucesamourai3.ogg
+- Assets/Audio/13.society/13.Society.ogg
 - Assets/Audio/13.society/society_mid40_face_a_drums_tom1.ogg
 - Assets/Audio/13.society/society_mid50_face_b_drums_kick.ogg
 - Assets/Audio/13.society/society_mid46_face_a_lead_saucesamourai4.ogg

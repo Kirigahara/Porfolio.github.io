@@ -1,21 +1,22 @@
 ManifestFileVersion: 0
-CRC: 1580491466
+CRC: 1613247899
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 738075cd8cad796240b06fb29026cc44
+    Hash: 661518f67539ec824df15bfcbcafddf7
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 738075cd8cad796240b06fb29026cc44
+    Hash: 661518f67539ec824df15bfcbcafddf7
 HashAppended: 0
 ClassTypes:
 - Class: 83
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Audio/22.BlackSun/22.Black Sun.ogg
 - Assets/Audio/22.BlackSun/blacksun_mid41_drums_snare.ogg
 - Assets/Audio/22.BlackSun/blacksun_mid44_lead_1.ogg
 - Assets/Audio/22.BlackSun/blacksun_mid36_bass_1.ogg

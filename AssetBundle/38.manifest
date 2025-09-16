@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 466037452
+CRC: 3691879713
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cddd3a796862799b2b3adeeb6d7324d7
+    Hash: c65ea3259a6758521d526cdc18b83eaf
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: cddd3a796862799b2b3adeeb6d7324d7
+    Hash: c65ea3259a6758521d526cdc18b83eaf
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -23,6 +23,7 @@ Assets:
 - Assets/Audio/38.flexin/flexin_mid38_face_a_fx1_adlib2.ogg
 - Assets/Audio/38.flexin/flexin_mid48_face_b_lead_lead3.ogg
 - Assets/Audio/38.flexin/flexin_mid54_face_b_bass_bass4.ogg
+- Assets/Audio/38.flexin/38.Flexin'.ogg
 - Assets/Audio/38.flexin/flexin_mid41_face_a_fx_roll.ogg
 - Assets/Audio/38.flexin/flexin_mid51_face_b_lead_lead5.ogg
 - Assets/Audio/38.flexin/flexin_mid50_face_b_fx1_adlib3.ogg

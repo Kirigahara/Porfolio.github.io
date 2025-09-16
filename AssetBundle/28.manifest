@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 4185079740
+CRC: 4230444815
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 088c5c14db7eb03b7e518284bb0c4b12
+    Hash: 35d613d419a445de158b5d660cf13ff9
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 088c5c14db7eb03b7e518284bb0c4b12
+    Hash: 35d613d419a445de158b5d660cf13ff9
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -34,6 +34,7 @@ Assets:
 - Assets/Audio/28.chill/chill_mid45_face_a_lead_2.ogg
 - Assets/Audio/28.chill/chill_mid59_face_b_lead_1.ogg
 - Assets/Audio/28.chill/chill_mid50_face_b_drum_crash.ogg
+- Assets/Audio/28.chill/28.Chill.ogg
 - Assets/Audio/28.chill/chill_mid49_face_b_drum_chime.ogg
 - Assets/Audio/28.chill/chill_mid52_face_b_drum_kick.ogg
 - Assets/Audio/28.chill/chill_mid56_face_b_fx1_2.ogg

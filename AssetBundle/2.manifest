@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2667414260
+CRC: 3719817513
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 52c8817cdff1efb7d49b617732574678
+    Hash: c6991492590a4cdde9abe5a562d34cbe
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 52c8817cdff1efb7d49b617732574678
+    Hash: c6991492590a4cdde9abe5a562d34cbe
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -23,6 +23,7 @@ Assets:
 - Assets/Audio/2.astronomia/astronomia_mid46_face_a_drums_hihat.ogg
 - Assets/Audio/2.astronomia/astronomia_mid37_face_a_fx_crash.ogg
 - Assets/Audio/2.astronomia/astronomia_mid36_face_a_lead_fx_intro.ogg
+- Assets/Audio/2.astronomia/2.Astronomia.ogg
 - Assets/Audio/2.astronomia/astronomia_mid47_face_a_drums_snare.ogg
 - Assets/Audio/2.astronomia/astronomia_mid38_face_a_lead_intro.ogg
 - Assets/Audio/2.astronomia/astronomia_mid44_face_a_bass_bass_3.ogg

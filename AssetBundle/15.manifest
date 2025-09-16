@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2716612101
+CRC: 1179713170
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8ffb25915d5170d1b59b8c68975b01f5
+    Hash: eb9ec17659b1dc52f2269ffa4c34c9fd
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9a2ca7bdbd1871f7131daf57de908e0c
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 8ffb25915d5170d1b59b8c68975b01f5
+    Hash: eb9ec17659b1dc52f2269ffa4c34c9fd
 HashAppended: 0
 ClassTypes:
 - Class: 83
@@ -25,6 +25,7 @@ Assets:
 - Assets/Audio/15.darkcircus/darkcircus_mid56_face_b_lead_melo12.ogg
 - Assets/Audio/15.darkcircus/darkcircus_mid48_face_b_fx_fxchainsaw.ogg
 - Assets/Audio/15.darkcircus/darkcircus_mid49_face_b_fx_fxlaught.ogg
+- Assets/Audio/15.darkcircus/15.Dark Circus.ogg
 - Assets/Audio/15.darkcircus/darkcircus_mid37_face_a_fx_fxscream.ogg
 - Assets/Audio/15.darkcircus/darkcircus_mid46_face_a_drums_hihat.ogg
 - Assets/Audio/15.darkcircus/darkcircus_mid41_face_a_lead_melo3.ogg
