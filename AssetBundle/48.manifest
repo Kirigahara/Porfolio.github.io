@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 1812929344
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f312d21c8771ce108bd9b9252fcd4642
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f312d21c8771ce108bd9b9252fcd4642
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/48.rundat/rundat_mid40_face_a_bass_melo_4.ogg
+- Assets/Audio/48.rundat/rundat_mid47_face_a_drums_snare.ogg
+- Assets/Audio/48.rundat/rundat_mid43_face_a_bass_melo_2.ogg
+- Assets/Audio/48.rundat/rundat_mid38_face_a_lead_vocal_3.ogg
+- Assets/Audio/48.rundat/rundat_mid45_face_a_drums_kick.ogg
+- Assets/Audio/48.rundat/rundat_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/48.rundat/rundat_mid37_face_a_lead_vocal_2.ogg
+- Assets/Audio/48.rundat/rundat_mid41_face_a_lead_vocal_4.ogg
+- Assets/Audio/48.rundat/rundat_mid36_face_a_lead_vocal_1.ogg
+- Assets/Audio/48.rundat/rundat_mid39_face_a_bass_melo_3.ogg
+- Assets/Audio/48.rundat/rundat_mid42_face_a_bass_melo_1.ogg
+- Assets/Audio/48.rundat/rundat_mid44_face_a_fx_breathe.ogg
+Dependencies: []

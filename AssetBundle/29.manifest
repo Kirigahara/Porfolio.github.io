@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3936560836
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0481776b291ee93da787ccfc663db7b9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0481776b291ee93da787ccfc663db7b9
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/29.chillhop/chillhop_mid57_face_b_drums_kick.ogg
+- Assets/Audio/29.chillhop/chillhop_mid47_face_a_drums_clap.ogg
+- Assets/Audio/29.chillhop/chillhop_mid52_face_b_bass_bass_2b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid42_face_a_bass_note_1a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/29.chillhop/chillhop_mid53_face_b_bass_bass_3b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid38_face_a_lead_lead_3a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/29.chillhop/chillhop_mid43_face_a_bass_note_2a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid45_face_a_drums_kick.ogg
+- Assets/Audio/29.chillhop/chillhop_mid55_face_b_fx_note_2b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid51_face_b_bass_bass_1b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid54_face_b_fx_note_1b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid48_face_b_lead_lead_1b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid37_face_a_lead_lead_2a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid56_face_b_fx_note_3b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid59_face_b_drums_clap.ogg
+- Assets/Audio/29.chillhop/chillhop_mid50_face_b_lead_lead_3b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid40_face_a_bass_bass_2a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid44_face_a_bass_note_3a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid39_face_a_bass_bass_1a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid36_face_a_lead_lead_1a.ogg
+- Assets/Audio/29.chillhop/chillhop_mid49_face_b_lead_lead_2b.ogg
+- Assets/Audio/29.chillhop/chillhop_mid41_face_a_bass_bass_3a.ogg
+Dependencies: []

@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3125496260
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 335dc7dd534d9b8007572b7c6006536a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 335dc7dd534d9b8007572b7c6006536a
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/47.purelofi/purelofi_mid50_face_b_lead_melo11.ogg
+- Assets/Audio/47.purelofi/purelofi_mid51_face_b_lead_melo12.ogg
+- Assets/Audio/47.purelofi/purelofi_mid47_face_a_drums_snare.ogg
+- Assets/Audio/47.purelofi/purelofi_mid49_face_b_lead_melo10.ogg
+- Assets/Audio/47.purelofi/purelofi_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/47.purelofi/purelofi_mid59_face_b_drums_snare.ogg
+- Assets/Audio/47.purelofi/purelofi_mid55_face_b_lead_melo16.ogg
+- Assets/Audio/47.purelofi/purelofi_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/47.purelofi/purelofi_mid40_face_a_fx_rainfx.ogg
+- Assets/Audio/47.purelofi/purelofi_mid45_face_a_drums_kick.ogg
+- Assets/Audio/47.purelofi/purelofi_mid42_face_a_lead_melo5.ogg
+- Assets/Audio/47.purelofi/purelofi_mid52_face_b_lead_melo13.ogg
+- Assets/Audio/47.purelofi/purelofi_mid41_face_a_lead_melo8.ogg
+- Assets/Audio/47.purelofi/purelofi_mid57_face_b_drums_kick.ogg
+- Assets/Audio/47.purelofi/purelofi_mid36_face_a_lead_melo1.ogg
+- Assets/Audio/47.purelofi/purelofi_mid39_face_a_lead_melo4.ogg
+- Assets/Audio/47.purelofi/purelofi_mid48_face_b_lead_melo9.ogg
+- Assets/Audio/47.purelofi/purelofi_mid38_face_a_lead_melo3.ogg
+- Assets/Audio/47.purelofi/purelofi_mid44_face_a_lead_melo7.ogg
+- Assets/Audio/47.purelofi/purelofi_mid56_face_b_drums_openhat.ogg
+- Assets/Audio/47.purelofi/purelofi_mid54_face_b_lead_melo15.ogg
+- Assets/Audio/47.purelofi/purelofi_mid37_face_a_lead_melo2.ogg
+- Assets/Audio/47.purelofi/purelofi_mid43_face_a_lead_melo6.ogg
+- Assets/Audio/47.purelofi/purelofi_mid53_face_b_lead_melo14.ogg
+Dependencies: []

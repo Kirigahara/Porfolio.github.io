@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 1924111371
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c7e66b9e3077453aacad1af10fe57a16
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c7e66b9e3077453aacad1af10fe57a16
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/31.classichouse/classichouse_mid42_face_a_lead_lead1.ogg
+- Assets/Audio/31.classichouse/classichouse_mid36_face_a_bass_chords1.ogg
+- Assets/Audio/31.classichouse/classichouse_mid45_face_a_drums_kick.ogg
+- Assets/Audio/31.classichouse/classichouse_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/31.classichouse/classichouse_mid40_face_a_bass_chords4.ogg
+- Assets/Audio/31.classichouse/classichouse_mid53_face_b_fx_vocal.ogg
+- Assets/Audio/31.classichouse/classichouse_mid52_face_b_bass_chords4.ogg
+- Assets/Audio/31.classichouse/classichouse_mid47_face_a_drums_snare.ogg
+- Assets/Audio/31.classichouse/classichouse_mid48_face_b_bass_chords1.ogg
+- Assets/Audio/31.classichouse/classichouse_mid54_face_b_lead_lead1.ogg
+- Assets/Audio/31.classichouse/classichouse_mid37_face_a_bass_chords2.ogg
+- Assets/Audio/31.classichouse/classichouse_mid55_face_b_lead_lead2.ogg
+- Assets/Audio/31.classichouse/classichouse_mid59_face_b_drums_snare.ogg
+- Assets/Audio/31.classichouse/classichouse_mid51_face_b_bass_chords3.ogg
+- Assets/Audio/31.classichouse/classichouse_mid49_face_b_bass_chords2.ogg
+- Assets/Audio/31.classichouse/classichouse_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/31.classichouse/classichouse_mid56_face_b_lead_lead3.ogg
+- Assets/Audio/31.classichouse/classichouse_mid57_face_b_drums_kick.ogg
+- Assets/Audio/31.classichouse/classichouse_mid38_face_a_fx_vocal1.ogg
+- Assets/Audio/31.classichouse/classichouse_mid41_face_a_fx_vocal2.ogg
+- Assets/Audio/31.classichouse/classichouse_mid39_face_a_bass_chords3.ogg
+- Assets/Audio/31.classichouse/classichouse_mid44_face_a_fx_vocal3.ogg
+- Assets/Audio/31.classichouse/classichouse_mid50_face_b_fx1_fx.ogg
+- Assets/Audio/31.classichouse/classichouse_mid43_face_a_lead_lead2.ogg
+Dependencies: []

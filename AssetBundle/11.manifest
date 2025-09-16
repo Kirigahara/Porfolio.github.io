@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 1415623146
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f8e904d6df0b9858797097ca9aaecb4f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f8e904d6df0b9858797097ca9aaecb4f
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/11.missyou/missyou_mid47_face_a_drums_snare.ogg
+- Assets/Audio/11.missyou/missyou_mid36_face_a_lead_piano_1.ogg
+- Assets/Audio/11.missyou/missyou_mid39_face_a_bass_vocal_1.ogg
+- Assets/Audio/11.missyou/missyou_mid42_face_a_bass_vocal_3.ogg
+- Assets/Audio/11.missyou/missyou_mid38_face_a_lead_piano_3.ogg
+- Assets/Audio/11.missyou/missyou_mid44_face_a_bass_vocal_4.ogg
+- Assets/Audio/11.missyou/missyou_mid45_face_a_drums_kick.ogg
+- Assets/Audio/11.missyou/missyou_mid37_face_a_lead_piano_2.ogg
+- Assets/Audio/11.missyou/missyou_mid41_face_a_bass_vocal_2.ogg
+- Assets/Audio/11.missyou/missyou_mid43_face_a_bass_vocal_5.ogg
+- Assets/Audio/11.missyou/missyou_mid46_face_a_fx_fx.ogg
+- Assets/Audio/11.missyou/missyou_mid40_face_a_lead_piano_4.ogg
+Dependencies: []

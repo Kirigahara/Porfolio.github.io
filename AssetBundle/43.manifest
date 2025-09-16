@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2859553783
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5fc522832a21557daa7b3a47199daf8c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5fc522832a21557daa7b3a47199daf8c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/43.intheclub/intheclub_mid48_face_b_bass_chords1.ogg
+- Assets/Audio/43.intheclub/intheclub_mid40_face_a_fx_vocal2.ogg
+- Assets/Audio/43.intheclub/intheclub_mid44_face_a_fx3_hook_fx.ogg
+- Assets/Audio/43.intheclub/intheclub_mid45_face_a_drums_kick.ogg
+- Assets/Audio/43.intheclub/intheclub_mid51_face_b_bass_chords3.ogg
+- Assets/Audio/43.intheclub/intheclub_mid49_face_b_bass_chords2.ogg
+- Assets/Audio/43.intheclub/intheclub_mid59_face_b_drums_snare.ogg
+- Assets/Audio/43.intheclub/intheclub_mid47_face_a_drums_snare.ogg
+- Assets/Audio/43.intheclub/intheclub_mid43_face_a_lead_lead2.ogg
+- Assets/Audio/43.intheclub/intheclub_mid46_face_a_drums_hihat_bass.ogg
+- Assets/Audio/43.intheclub/intheclub_mid54_face_b_fx_vocal2.ogg
+- Assets/Audio/43.intheclub/intheclub_mid41_face_a_fx2_fx_synth.ogg
+- Assets/Audio/43.intheclub/intheclub_mid58_face_b_drums_hihat_bass.ogg
+- Assets/Audio/43.intheclub/intheclub_mid39_face_a_fx_vocal1.ogg
+- Assets/Audio/43.intheclub/intheclub_mid38_face_a_fx1_intro.ogg
+- Assets/Audio/43.intheclub/intheclub_mid36_face_a_bass_chords1.ogg
+- Assets/Audio/43.intheclub/intheclub_mid42_face_a_lead_lead1.ogg
+- Assets/Audio/43.intheclub/intheclub_mid53_face_b_lead_lead1.ogg
+- Assets/Audio/43.intheclub/intheclub_mid37_face_a_bass_chords2.ogg
+- Assets/Audio/43.intheclub/intheclub_mid55_face_b_fx_vocal3.ogg
+- Assets/Audio/43.intheclub/intheclub_mid52_face_b_bass_chords4.ogg
+- Assets/Audio/43.intheclub/intheclub_mid56_face_b_fx1_vocal_fx.ogg
+- Assets/Audio/43.intheclub/intheclub_mid50_face_b_fx_vocal1.ogg
+- Assets/Audio/43.intheclub/intheclub_mid57_face_b_drums_kick.ogg
+Dependencies: []

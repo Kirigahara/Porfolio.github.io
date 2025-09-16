@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2483153151
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ad3e9ce668158c2fa1b79f29306f9726
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ad3e9ce668158c2fa1b79f29306f9726
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/16.alongtrap/alongtrap_mid53_face_b_drums_drum3.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid50_face_b_bass_melo3.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid44_face_a_fx_vocalup.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid51_face_b_drums_drum1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid52_face_b_drums_drum2.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid55_face_b_drums_hat1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid59_face_b_lead_lead3.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid46_face_a_lead_lead2.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid49_face_b_bass_melo2.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid54_face_b_drums_drum4.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid39_face_a_drums_drum1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid58_face_b_lead_lead2.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid43_face_a_drums_hat2.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid40_face_a_drums_drum2.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid57_face_b_lead_lead1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid45_face_a_lead_lead1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid47_face_a_lead_lead3.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid36_face_a_bass_melo1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid48_face_b_bass_melo1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid38_face_a_bass_melo3.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid42_face_a_drums_hat1.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid37_face_a_bass_melo2.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid41_face_a_drums_drum3.ogg
+- Assets/Audio/16.alongtrap/alongtrap_mid56_face_b_drums_hat2.ogg
+Dependencies: []

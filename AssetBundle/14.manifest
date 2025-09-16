@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2929545575
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0fb33ec4dd70828985b039068f4d46e2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0fb33ec4dd70828985b039068f4d46e2
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/14.unity/unity_mid38_face_a_lead_lead3_a.ogg
+- Assets/Audio/14.unity/unity_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/14.unity/unity_mid39_face_a_bass_bass3_a.ogg
+- Assets/Audio/14.unity/unity_mid47_face_a_drums_snare.ogg
+- Assets/Audio/14.unity/unity_mid40_face_a_bass_bass4_a.ogg
+- Assets/Audio/14.unity/unity_mid42_face_a_bass_bass1_a.ogg
+- Assets/Audio/14.unity/unity_mid41_face_a_lead_lead4_a.ogg
+- Assets/Audio/14.unity/unity_mid59_face_b_drums_snare.ogg
+- Assets/Audio/14.unity/unity_mid43_face_a_bass_bass2_a.ogg
+- Assets/Audio/14.unity/unity_mid44_face_a_fx_drop_a.ogg
+- Assets/Audio/14.unity/unity_mid45_face_a_drums_kick.ogg
+- Assets/Audio/14.unity/unity_mid49_face_b_lead_lead2_b.ogg
+- Assets/Audio/14.unity/unity_mid57_face_b_drums_kick.ogg
+- Assets/Audio/14.unity/unity_mid50_face_b_lead_lead3_b.ogg
+- Assets/Audio/14.unity/unity_mid55_face_b_bass_bass2_b.ogg
+- Assets/Audio/14.unity/unity_mid37_face_a_lead_lead2_a.ogg
+- Assets/Audio/14.unity/unity_mid51_face_b_bass_bass3_b.ogg
+- Assets/Audio/14.unity/unity_mid54_face_b_bass_bass1_b.ogg
+- Assets/Audio/14.unity/unity_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/14.unity/unity_mid36_face_a_lead_lead1_a.ogg
+- Assets/Audio/14.unity/unity_mid52_face_b_bass_bass4_b.ogg
+- Assets/Audio/14.unity/unity_mid53_face_b_lead_lead4_b.ogg
+- Assets/Audio/14.unity/unity_mid56_face_b_fx_fx_b.ogg
+- Assets/Audio/14.unity/unity_mid48_face_b_lead_lead1_b.ogg
+Dependencies: []

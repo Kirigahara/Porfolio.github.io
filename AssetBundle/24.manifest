@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 1194213929
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: af890063de96d0a9b24a6b4a28e1a564
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: af890063de96d0a9b24a6b4a28e1a564
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/24.blaze/blaze_mid42_face_a_bass_chords_2.ogg
+- Assets/Audio/24.blaze/blaze_mid37_face_a_lead_vocal_1.ogg
+- Assets/Audio/24.blaze/blaze_mid38_face_a_lead_fill_4.ogg
+- Assets/Audio/24.blaze/blaze_mid41_face_a_lead_snare_2.ogg
+- Assets/Audio/24.blaze/blaze_mid43_face_a_bass_chords_4.ogg
+- Assets/Audio/24.blaze/blaze_mid46_face_a_bass_chords_3.ogg
+- Assets/Audio/24.blaze/blaze_mid47_face_a_fx1_kick_2.ogg
+- Assets/Audio/24.blaze/blaze_mid39_face_a_lead_fill_3.ogg
+- Assets/Audio/24.blaze/blaze_mid44_face_a_fx1_snare.ogg
+- Assets/Audio/24.blaze/blaze_mid45_face_a_bass_chords_1.ogg
+- Assets/Audio/24.blaze/blaze_mid40_face_a_lead_fill_2.ogg
+- Assets/Audio/24.blaze/blaze_mid36_face_a_lead_fill_1.ogg
+Dependencies: []

@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2545156531
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0ea090db62e4c698b4bbd3640fc89de5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0ea090db62e4c698b4bbd3640fc89de5
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/35.Crosswalk/crosswalk_mid53_face_b_drums_02.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid47_face_a_lead_04.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid42_face_a_drums_03.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid38_face_a_bass_03.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid51_face_b_bass_04.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid56_face_b_lead_01.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid59_face_b_lead_04.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid46_face_a_lead_03.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid41_face_a_drums_02.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid37_face_a_bass_02.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid45_face_a_lead_02.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid50_face_b_bass_03.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid52_face_b_drums_01.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid57_face_b_lead_02.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid43_face_a_drums_04.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid55_face_b_drums_04.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid39_face_a_bass_04.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid40_face_a_drums_01.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid58_face_b_lead_03.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid36_face_a_bass_01.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid48_face_b_bass_01.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid54_face_b_drums_03.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid44_face_a_lead_01.ogg
+- Assets/Audio/35.Crosswalk/crosswalk_mid49_face_b_bass_02.ogg
+Dependencies: []

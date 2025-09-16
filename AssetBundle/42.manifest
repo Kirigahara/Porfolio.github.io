@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3149007576
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2d11f8b4812fd840d6c1d51eeaaec524
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2d11f8b4812fd840d6c1d51eeaaec524
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/42.inriostreets/inriostreets_mid45_face_a_drums_kick.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid44_face_a_lead_melo7.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid49_face_b_lead_melo2.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid37_face_a_lead_melo2.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid59_face_b_drums_snare.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid55_face_b_lead_melo6.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid43_face_a_lead_melo6.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid50_face_b_lead_melo3.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid51_face_b_lead_melo4.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid56_face_b_lead_melo7.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid48_face_b_lead_melo1.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid40_face_a_fx_vocal.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid36_face_a_lead_melo1.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid53_face_b_lead_melo8.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid57_face_b_drums_kick.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid42_face_a_lead_melo5.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid58_face_b_drums_hihat.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid38_face_a_lead_melo3.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid54_face_b_lead_melo5.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid39_face_a_lead_melo4.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid41_face_a_lead_melo8.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid52_face_b_fx_trumpet.ogg
+- Assets/Audio/42.inriostreets/inriostreets_mid47_face_a_drums_snare.ogg
+Dependencies: []

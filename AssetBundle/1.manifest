@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 334019535
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2513f543c774a49b11daa53a016077fa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2513f543c774a49b11daa53a016077fa
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid40_face_a_lead_lead_5.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid41_face_a_lead_lead_6.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid37_face_a_lead_lead_2.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid44_face_a_drums_roll.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid42_face_a_lead_lead_7.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid39_face_a_lead_lead_4.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid47_face_a_drums_snare.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid43_face_a_lead_lead_8.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid38_face_a_lead_lead_3.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid36_face_a_lead_lead_1.ogg
+- Assets/Audio/1.astronautintheocean/astronautintheocean_mid45_face_a_drums_kick.ogg
+Dependencies: []

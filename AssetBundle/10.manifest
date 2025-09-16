@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 4058098868
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 434db60e73ddf54b522087e78fdfbd95
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 434db60e73ddf54b522087e78fdfbd95
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/10.maskoff/maskoff_mid38_face_a_fx3_adlib_1.ogg
+- Assets/Audio/10.maskoff/maskoff_mid40_face_a_lead_flute_2.ogg
+- Assets/Audio/10.maskoff/maskoff_mid36_face_a_lead_intro_1.ogg
+- Assets/Audio/10.maskoff/maskoff_mid37_face_a_lead_intro_2.ogg
+- Assets/Audio/10.maskoff/maskoff_mid47_face_a_drums_snare.ogg
+- Assets/Audio/10.maskoff/maskoff_mid42_face_a_bass_piano_1.ogg
+- Assets/Audio/10.maskoff/maskoff_mid39_face_a_lead_flute_1.ogg
+- Assets/Audio/10.maskoff/maskoff_mid44_face_a_fx_adlib_3.ogg
+- Assets/Audio/10.maskoff/maskoff_mid43_face_a_bass_piano_2.ogg
+- Assets/Audio/10.maskoff/maskoff_mid46_face_a_drums_hihat.ogg
+- Assets/Audio/10.maskoff/maskoff_mid45_face_a_drums_kick.ogg
+- Assets/Audio/10.maskoff/maskoff_mid41_face_a_fx1_adlib_2.ogg
+Dependencies: []

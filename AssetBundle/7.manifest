@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2960163988
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d1363d5566e8fafa3016309c96fac92e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d1363d5566e8fafa3016309c96fac92e
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Audio/7.discozombie/discozombie_mid59_face_b_lead_zombielead.ogg
+- Assets/Audio/7.discozombie/discozombie_mid45_face_a_fx_vocalup.ogg
+- Assets/Audio/7.discozombie/discozombie_mid55_face_b_drums_tomfill.ogg
+- Assets/Audio/7.discozombie/discozombie_mid50_face_b_drums_kick.ogg
+- Assets/Audio/7.discozombie/discozombie_mid49_face_b_drums_hat.ogg
+- Assets/Audio/7.discozombie/discozombie_mid38_face_a_drums_hat1.ogg
+- Assets/Audio/7.discozombie/discozombie_mid54_face_b_drums_tomdisco.ogg
+- Assets/Audio/7.discozombie/discozombie_mid41_face_a_drums_snare.ogg
+- Assets/Audio/7.discozombie/discozombie_mid48_face_b_bass_discobass.ogg
+- Assets/Audio/7.discozombie/discozombie_mid43_face_a_fx_up.ogg
+- Assets/Audio/7.discozombie/discozombie_mid42_face_a_fx_down.ogg
+- Assets/Audio/7.discozombie/discozombie_mid36_face_a_bass_discobass.ogg
+- Assets/Audio/7.discozombie/discozombie_mid57_face_b_fx_vocal.ogg
+- Assets/Audio/7.discozombie/discozombie_mid39_face_a_drums_hat2.ogg
+- Assets/Audio/7.discozombie/discozombie_mid56_face_b_fx_down.ogg
+- Assets/Audio/7.discozombie/discozombie_mid47_face_a_lead_leadup.ogg
+- Assets/Audio/7.discozombie/discozombie_mid53_face_b_drums_snare3.ogg
+- Assets/Audio/7.discozombie/discozombie_mid37_face_a_drums_drumup.ogg
+- Assets/Audio/7.discozombie/discozombie_mid51_face_b_drums_snare.ogg
+- Assets/Audio/7.discozombie/discozombie_mid40_face_a_drums_kick.ogg
+- Assets/Audio/7.discozombie/discozombie_mid44_face_a_fx_vocal.ogg
+- Assets/Audio/7.discozombie/discozombie_mid58_face_b_lead_discolead.ogg
+- Assets/Audio/7.discozombie/discozombie_mid46_face_a_lead_lead.ogg
+- Assets/Audio/7.discozombie/discozombie_mid52_face_b_drums_snare2.ogg
+Dependencies: []
