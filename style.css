@@ -27,11 +27,98 @@ p {
 
 /* Hero */
 header {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  overflow: hidden; /* prevents overflow from animation */
 }
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: fadeInRight 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ffffff;
+  color: #667eea;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+.cta-button:hover {
+  background: #5563c1;
+  color: white;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+  .header-text h1 {
+    font-size: 2rem;
+  }
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  animation: fadeInLeft 1.2s ease forwards;
+}
+
 
 header h1 {
     font-size: 2.5rem;
@@ -268,4 +355,16 @@ header {
     .header-text h1 {
         font-size: 2rem;
     }
+}
+
+/* Scroll Fade-In Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
