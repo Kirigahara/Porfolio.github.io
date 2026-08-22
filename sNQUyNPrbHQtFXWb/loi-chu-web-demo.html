@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lối Chữ — Demo giao diện</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ink: #241f19;
+    --ink-soft: #5b544a;
+    --paper: #faf6ef;
+    --paper-raised: #ffffff;
+    --line: #e7ddc9;
+    --accent: #3d4f9e;
+    --accent-tint: color-mix(in oklab, var(--accent) 12%, white);
+    --gold: oklch(52% 0.11 70);
+    --gold-tint: color-mix(in oklab, var(--gold) 14%, white);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: color-mix(in oklab, var(--accent) 75%, black); }
+  h1, h2, h3 { font-family: "Newsreader", Georgia, serif; font-weight: 600; margin: 0; }
+  button { font-family: inherit; cursor: pointer; }
+  .btn-primary {
+    background: var(--accent); color: #fff; border: none; border-radius: 3px;
+    padding: 12px 22px; font-size: 14.5px; font-weight: 600; letter-spacing: 0.01em;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { background: color-mix(in oklab, var(--accent) 85%, black); }
+  .btn-secondary {
+    background: transparent; color: var(--ink); border: 1.5px solid var(--line); border-radius: 3px;
+    padding: 11px 20px; font-size: 14.5px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-secondary:hover { border-color: var(--ink-soft); }
+  .tag {
+    font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-tint);
+    border-radius: 2px; padding: 4px 9px; letter-spacing: 0.02em;
+  }
+  .cover {
+    border-radius: 4px; position: relative; overflow: hidden; flex-shrink: 0;
+    display: flex; align-items: flex-end; box-shadow: 0 1px 2px rgba(36,31,25,0.15), 0 8px 20px -12px rgba(36,31,25,0.4);
+  }
+  .cover::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.35) 100%);
+  }
+  .cover-title {
+    position: relative; z-index: 1; color: #fff; font-family: "Newsreader", Georgia, serif;
+    font-weight: 600; padding: 12px; line-height: 1.25; text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  }
+  header .logo-wrap { cursor: pointer; }
+  .novel-card { cursor: pointer; }
+  .chapter-row { cursor: pointer; }
+  .chapter-row:last-child, .rank-row:last-child { border-bottom: none !important; }
+  .icon-btn { background: none; border: none; padding: 6px; border-radius: 3px; }
+  .icon-btn:hover { background: color-mix(in oklab, var(--ink) 6%, transparent); }
+
+  /* Reader */
+  #view-reader { display: none; }
+  .reader-topbar { position: sticky; top: 0; z-index: 10; }
+  .reader-topbar-btn { background: none; border: none; padding: 8px; border-radius: 3px; display: flex; align-items: center; gap: 6px; }
+  .reader-topbar-btn:hover { background: rgba(0,0,0,0.05); }
+  .opt-pill {
+    border: 1.5px solid var(--line); background: var(--paper-raised); border-radius: 3px;
+    padding: 8px 14px; font-size: 13.5px; font-weight: 600; color: var(--ink-soft);
+    display: flex; align-items: center; gap: 7px;
+  }
+  .opt-pill.selected { border-color: var(--accent); color: var(--accent); background: var(--accent-tint); }
+  .chapter-nav-btn {
+    display: flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 3px;
+    border: 1.5px solid var(--line); background: var(--paper-raised); font-size: 14px; font-weight: 600; color: var(--ink);
+  }
+  .chapter-nav-btn:hover { border-color: var(--ink-soft); }
+  .chapter-nav-btn.disabled { opacity: 0.4; }
+
+  /* Account */
+  #view-account { display: none; }
+  .reading-row { cursor: pointer; }
+  .reading-row:last-child { border-bottom: none !important; }
+
+  /* Explore */
+  #view-explore { display: none; }
+  .filter-chip {
+    border: 1.5px solid var(--line); background: var(--paper-raised); border-radius: 20px;
+    padding: 7px 16px; font-size: 13px; font-weight: 600; color: var(--ink-soft);
+  }
+  .filter-chip:hover { border-color: var(--ink-soft); }
+  .filter-chip.selected { border-color: var(--accent); color: var(--accent); background: var(--accent-tint); }
+  .sort-select {
+    border: 1.5px solid var(--line); background: var(--paper-raised); border-radius: 3px;
+    padding: 8px 12px; font-size: 13.5px; font-weight: 600; color: var(--ink); font-family: inherit;
+  }
+
+  /* Rankings */
+  #view-rankings { display: none; }
+
+  /* Schedule */
+  #view-schedule { display: none; }
+  .schedule-day {
+    border: 1.5px solid var(--line); border-radius: 6px; background: var(--paper-raised);
+    padding: 14px; min-height: 170px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .schedule-day.today { border-color: var(--accent); background: var(--accent-tint); }
+  .schedule-day-label { font-size: 12px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.03em; }
+  .schedule-day.today .schedule-day-label { color: var(--accent); }
+  .schedule-novel { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+  .schedule-novel:hover .schedule-novel-title { text-decoration: underline; }
+  .schedule-empty { font-size: 12px; color: var(--ink-soft); opacity: 0.65; }
+
+  /* Wallet */
+  #view-wallet { display: none; }
+  .coin-badge-btn { border: none; cursor: pointer; }
+  .topup-card {
+    border: 1.5px solid var(--line); background: var(--paper-raised); border-radius: 6px;
+    padding: 18px; display: flex; flex-direction: column; gap: 8px; cursor: pointer; position: relative;
+  }
+  .topup-card:hover { border-color: var(--ink-soft); }
+  .topup-card.selected { border-color: var(--accent); background: var(--accent-tint); }
+  .topup-bonus {
+    position: absolute; top: 10px; right: 10px; font-size: 11px; font-weight: 700; color: #fff;
+    background: var(--gold); border-radius: 2px; padding: 2px 7px;
+  }
+  .topup-success { font-size: 13.5px; font-weight: 600; color: color-mix(in oklab, var(--accent) 70%, black); }
+  .tx-row:last-child { border-bottom: none !important; }
+</style>
+</head>
+<body>
+
+<div id="app-shell" style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- HEADER (home + detail) -->
+  <header id="main-header" style="position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--line);">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; gap: 32px;">
+      <div class="logo-wrap" style="display: flex; align-items: center; gap: 9px;" onclick="showHome()">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3d4f9e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H11a1 1 0 0 1 1 1v15a1 1 0 0 0-1-1H5.5A1.5 1.5 0 0 1 4 17.5v-12Z"/><path d="M20 5.5C20 4.67 19.33 4 18.5 4H13a1 1 0 0 0-1 1v15a1 1 0 0 1 1-1h5.5a1.5 1.5 0 0 0 1.5-1.5v-12Z"/></svg>
+        <span style="font-family: 'Newsreader', Georgia, serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em;">Lối Chữ</span>
+      </div>
+      <nav style="display: flex; align-items: center; gap: 22px; font-size: 14.5px; font-weight: 500; color: var(--ink-soft);">
+        <a href="#" onclick="showExplore(); return false;" style="color: var(--ink);">Khám phá</a>
+        <a href="#" onclick="showRankings(); return false;">Xếp hạng</a>
+        <a href="#" onclick="showSchedule(); return false;">Lịch ra chương</a>
+      </nav>
+      <div style="flex: 1; max-width: 340px; display: flex; align-items: center; gap: 8px; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 3px; padding: 8px 12px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ink-soft)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <span style="font-size: 13.5px; color: var(--ink-soft);">Tìm truyện, tác giả...</span>
+      </div>
+      <div style="flex: 1;"></div>
+      <button class="icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></button>
+      <button class="coin-badge-btn" onclick="showWallet()" style="display: flex; align-items: center; gap: 7px; background: var(--gold-tint); border-radius: 3px; padding: 7px 12px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/></svg>
+        <span style="font-size: 13.5px; font-weight: 700; color: var(--gold);" id="header-coins"></span>
+      </button>
+      <button class="btn-secondary" style="padding: 8px 16px;" id="account-btn" onclick="showAccount()">Tài khoản</button>
+    </div>
+  </header>
+
+  <!-- READER TOPBAR (own header, shown only in reader route) -->
+  <div id="reader-topbar" class="reader-topbar" style="display: none;">
+    <div style="max-width: 860px; margin: 0 auto; padding: 12px 32px; display: flex; align-items: center; gap: 16px;">
+      <button class="reader-topbar-btn" onclick="backToDetailFromReader()" id="reader-back-btn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        <span style="font-size: 13.5px; font-weight: 600;">Quay lại</span>
+      </button>
+      <div id="reader-topbar-divider" style="width: 1px; height: 20px;"></div>
+      <div style="flex: 1; min-width: 0;">
+        <div id="reader-novel-title" style="font-size: 13.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></div>
+        <div id="reader-chapter-label" style="font-size: 12px;"></div>
+      </div>
+      <button class="reader-topbar-btn" onclick="togglePanel()" id="reader-panel-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h11M19 6h1M4 12h5M13 12h7M4 18h13M21 18h0"/><circle cx="17" cy="6" r="2.3"/><circle cx="9" cy="12" r="2.3"/><circle cx="17" cy="18" r="2.3"/></svg>
+        <span style="font-size: 13.5px; font-weight: 600;">Tùy chỉnh</span>
+      </button>
+    </div>
+    <div id="reader-progress-track" style="height: 3px;">
+      <div id="reader-progress-fill" style="height: 100%; background: var(--accent); width: 0%;"></div>
+    </div>
+  </div>
+
+  <!-- READER SETTINGS PANEL -->
+  <div id="reader-panel" style="display: none;">
+    <div style="max-width: 860px; margin: 0 auto; padding: 18px 32px; display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+        <span id="panel-label-size" style="font-size: 12.5px; font-weight: 600; width: 70px;">Cỡ chữ</span>
+        <div id="fontsize-options" style="display: flex; gap: 8px;"></div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+        <span id="panel-label-theme" style="font-size: 12.5px; font-weight: 600; width: 70px;">Giao diện</span>
+        <div id="theme-options" style="display: flex; gap: 8px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROUTE: HOME -->
+  <main id="view-home" style="flex: 1;">
+    <section style="max-width: 1180px; margin: 0 auto; padding: 48px 32px 40px; display: flex; gap: 44px; align-items: flex-end;">
+      <div class="cover" id="hero-cover" style="width: 220px; height: 310px;">
+        <div class="cover-title" id="hero-cover-title" style="font-size: 19px;"></div>
+      </div>
+      <div style="flex: 1; padding-bottom: 6px;">
+        <div id="hero-genres" style="display: flex; gap: 8px; margin-bottom: 14px;"></div>
+        <h1 id="hero-title" style="font-size: 38px; line-height: 1.15; margin-bottom: 12px; max-width: 640px;"></h1>
+        <p id="hero-synopsis" style="font-size: 15px; line-height: 1.65; color: var(--ink-soft); max-width: 560px; margin-bottom: 22px;"></p>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <button class="btn-primary" id="hero-open">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14l11-7z"/></svg>
+            Đọc ngay
+          </button>
+          <button class="btn-secondary" id="hero-open-2">Xem chi tiết</button>
+          <span style="font-size: 13px; color: var(--ink-soft); margin-left: 6px;" id="hero-meta"></span>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 8px 32px 8px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px;">
+        <h2 style="font-size: 22px;">Mới cập nhật</h2>
+        <a href="#" style="font-size: 13.5px; font-weight: 600;">Xem tất cả →</a>
+      </div>
+      <div id="novel-grid" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px;"></div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 44px 32px 64px;">
+      <h2 style="font-size: 22px; margin-bottom: 18px;">Bảng xếp hạng tuần này</h2>
+      <div id="rank-list" style="background: var(--paper-raised); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;"></div>
+    </section>
+  </main>
+
+  <!-- ROUTE: DETAIL -->
+  <main id="view-detail" style="flex: 1; display: none;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 28px 32px 0;">
+      <button onclick="showHome()" style="background: none; border: none; padding: 0; display: flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 600; color: var(--ink-soft);">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        Quay lại
+      </button>
+    </div>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 22px 32px 40px; display: flex; gap: 40px;">
+      <div class="cover" id="detail-cover" style="width: 236px; height: 330px;">
+        <div class="cover-title" id="detail-cover-title" style="font-size: 20px;"></div>
+      </div>
+      <div style="flex: 1;">
+        <div id="detail-genres" style="display: flex; gap: 8px; margin-bottom: 12px;"></div>
+        <h1 id="detail-title" style="font-size: 32px; margin-bottom: 10px;"></h1>
+        <div id="detail-byline" style="font-size: 14px; color: var(--ink-soft); margin-bottom: 16px;"></div>
+        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 18px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.9 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"/></svg>
+          <span style="font-size: 14px; font-weight: 700;" id="detail-rating"></span>
+          <span style="font-size: 13px; color: var(--ink-soft);" id="detail-count"></span>
+        </div>
+        <p style="font-size: 14.5px; line-height: 1.7; color: var(--ink-soft); max-width: 600px; margin-bottom: 24px;" id="detail-synopsis"></p>
+        <div style="display: flex; gap: 12px;">
+          <button class="btn-primary" id="detail-read-from-start">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14l11-7z"/></svg>
+            Đọc từ đầu — miễn phí
+          </button>
+          <button class="btn-secondary">+ Theo dõi</button>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 0 32px 64px;">
+      <h2 style="font-size: 20px; margin-bottom: 16px;">Danh sách chương</h2>
+      <div id="chapter-list" style="background: var(--paper-raised); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;"></div>
+    </section>
+  </main>
+
+  <!-- ROUTE: EXPLORE (Khám phá) -->
+  <main id="view-explore" style="flex: 1;">
+    <section style="max-width: 1180px; margin: 0 auto; padding: 40px 32px 8px;">
+      <h1 style="font-size: 26px; margin-bottom: 6px;">Khám phá</h1>
+      <p style="font-size: 13.5px; color: var(--ink-soft); margin-bottom: 22px;">Tất cả truyện trên Lối Chữ</p>
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 24px;">
+        <div id="explore-genre-chips" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+        <select class="sort-select" id="explore-sort-select" onchange="setExploreSort(this.value)">
+          <option value="rating">Đánh giá cao nhất</option>
+          <option value="reads">Nhiều lượt đọc nhất</option>
+          <option value="updated">Mới cập nhật</option>
+        </select>
+      </div>
+    </section>
+    <section style="max-width: 1180px; margin: 0 auto; padding: 0 32px 64px;">
+      <div id="explore-grid" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px;"></div>
+      <p id="explore-empty" style="display: none; font-size: 14px; color: var(--ink-soft); padding: 40px 0; text-align: center;">Không có truyện nào phù hợp với bộ lọc hiện tại.</p>
+    </section>
+  </main>
+
+  <!-- ROUTE: RANKINGS (Xếp hạng) -->
+  <main id="view-rankings" style="flex: 1;">
+    <section style="max-width: 1180px; margin: 0 auto; padding: 40px 32px 8px;">
+      <h1 style="font-size: 26px; margin-bottom: 6px;">Xếp hạng</h1>
+      <p style="font-size: 13.5px; color: var(--ink-soft); margin-bottom: 22px;">Bảng xếp hạng truyện trên Lối Chữ</p>
+      <div id="rankings-tabs" style="display: flex; gap: 8px; margin-bottom: 24px;"></div>
+    </section>
+    <section style="max-width: 1180px; margin: 0 auto; padding: 0 32px 64px;">
+      <div id="rankings-list" style="background: var(--paper-raised); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;"></div>
+    </section>
+  </main>
+
+  <!-- ROUTE: SCHEDULE (Lịch ra chương) -->
+  <main id="view-schedule" style="flex: 1;">
+    <section style="max-width: 1180px; margin: 0 auto; padding: 40px 32px 8px;">
+      <h1 style="font-size: 26px; margin-bottom: 6px;">Lịch ra chương</h1>
+      <p style="font-size: 13.5px; color: var(--ink-soft); margin-bottom: 22px;">Lịch phát hành chương mới trong tuần</p>
+    </section>
+    <section style="max-width: 1180px; margin: 0 auto; padding: 0 32px 64px;">
+      <div id="schedule-grid" style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 14px;"></div>
+    </section>
+  </main>
+
+  <!-- ROUTE: READER -->
+  <main id="view-reader">
+    <article style="max-width: 720px; margin: 0 auto; padding: 48px 32px 40px;">
+      <h1 id="reader-chapter-title" style="font-size: 24px; margin-bottom: 26px;"></h1>
+      <div id="reader-content" style="line-height: 1.9;"></div>
+    </article>
+    <div style="max-width: 720px; margin: 0 auto; padding: 8px 32px 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+      <button class="chapter-nav-btn" id="reader-prev-btn" onclick="prevChapter()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        Chương trước
+      </button>
+      <span id="reader-position-label" style="font-size: 12.5px;"></span>
+      <button class="chapter-nav-btn" id="reader-next-btn" onclick="nextChapter()" style="flex-direction: row-reverse;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        Chương sau
+      </button>
+    </div>
+  </main>
+
+  <!-- ROUTE: ACCOUNT (Tài khoản / Tủ sách) -->
+  <main id="view-account" style="flex: 1;">
+    <section style="max-width: 1180px; margin: 0 auto; padding: 40px 32px 8px; display: flex; align-items: center; gap: 18px;">
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 600; flex-shrink: 0;" id="account-avatar"></div>
+      <div style="flex: 1;">
+        <div style="font-size: 20px; font-weight: 600; font-family: 'Newsreader', Georgia, serif;" id="account-name"></div>
+        <button class="coin-badge-btn" onclick="showWallet()" style="display: inline-flex; align-items: center; gap: 7px; background: var(--gold-tint); border-radius: 3px; padding: 6px 12px; margin-top: 8px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/></svg>
+          <span style="font-size: 13.5px; font-weight: 700; color: var(--gold);" id="account-coins"></span>
+        </button>
+      </div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 36px 32px 8px;">
+      <h2 style="font-size: 20px; margin-bottom: 16px;">Đang đọc</h2>
+      <div id="account-reading-list" style="background: var(--paper-raised); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;"></div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 36px 32px 64px;">
+      <h2 style="font-size: 20px; margin-bottom: 16px;">Đang theo dõi</h2>
+      <div id="account-following-grid" style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px;"></div>
+    </section>
+  </main>
+
+  <!-- ROUTE: WALLET (Nạp xu) -->
+  <main id="view-wallet" style="flex: 1;">
+    <section style="max-width: 1180px; margin: 0 auto; padding: 40px 32px 8px;">
+      <h1 style="font-size: 26px; margin-bottom: 6px;">Nạp xu</h1>
+      <p style="font-size: 13.5px; color: var(--ink-soft); margin-bottom: 18px;">Tỷ lệ quy đổi: 1.000đ = 1 xu</p>
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: var(--gold-tint); border-radius: 3px; padding: 8px 14px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/></svg>
+        <span style="font-size: 14px; font-weight: 700; color: var(--gold);">Số dư: <span id="wallet-balance"></span></span>
+      </div>
+      <div id="wallet-notice" style="display: none; margin-top: 14px; font-size: 13.5px; font-weight: 600; color: color-mix(in oklab, var(--gold) 80%, black); background: var(--gold-tint); border-radius: 3px; padding: 10px 14px;"></div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 28px 32px 8px;">
+      <h2 style="font-size: 18px; margin-bottom: 16px;">Chọn gói nạp</h2>
+      <div id="topup-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 20px;"></div>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="btn-primary" id="topup-btn" onclick="topUp()">Nạp ngay</button>
+        <span id="topup-success" class="topup-success" style="display: none;"></span>
+      </div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: 36px 32px 64px;">
+      <h2 style="font-size: 18px; margin-bottom: 16px;">Lịch sử giao dịch</h2>
+      <div id="tx-list" style="background: var(--paper-raised); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;"></div>
+    </section>
+  </main>
+
+  <footer id="main-footer" style="border-top: 1px solid var(--line); padding: 22px 32px; text-align: center; font-size: 12.5px; color: var(--ink-soft);">
+    Lối Chữ — bản demo giao diện, dữ liệu minh hoạ
+  </footer>
+</div>
+
+<script>
+const STAR = '<svg width="11" height="11" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.9 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"/></svg>';
+const COIN = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/></svg>';
+
+const chapterTitles = [
+  "Thanh kiếm gãy", "Con đường không tên", "Lời thề cũ", "Vết sẹo đầu tiên", "Người lạ ở quán trọ",
+  "Bóng tối phía sau", "Kẻ săn tin", "Mật lệnh triều đình", "Trận chiến trên đèo", "Ánh sáng cuối cùng"
+];
+function buildChapters() {
+  return chapterTitles.map((t, i) => ({ num: i + 1, title: `Chương ${i + 1}: ${t}`, free: i < 6, price: 4 }));
+}
+
+const novels = [
+  { id: "n1", title: "Hiệp Sĩ Không Kiếm", author: "Đình Lam", translator: "J.Trans", genres: ["Fantasy", "Hành động"], rating: "4.8", chaptersCount: 132, status: "Đang ra", reads: "820K", color: "oklch(52% 0.09 265)", releaseDays: [1, 5],
+    synopsis: "Một hiệp sĩ đánh mất thanh kiếm gia truyền ngay trong trận chiến định mệnh, buộc phải tìm lại sức mạnh của mình bằng con đường chưa ai từng đi qua.",
+    excerpt: [
+      "Lưỡi kiếm gãy làm đôi ngay khoảnh khắc hắn tưởng mình đã thắng. Tiếng thép vỡ vang lên giữa bãi chiến trường im ắng, và trong một nhịp tim, mọi thứ hắn từng tin — về sức mạnh, về danh dự, về chính bản thân mình — cũng vỡ theo.",
+      "Không ai dạy một hiệp sĩ phải làm gì khi thanh kiếm gia truyền không còn nữa. Hắn đứng đó, hai tay trống rỗng, nhìn kẻ địch bước lại gần, và nhận ra: có lẽ sức mạnh thật sự chưa bao giờ nằm trong lưỡi thép.",
+      "Đêm đó hắn rời khỏi doanh trại, không mang theo gì ngoài một mảnh kiếm gãy giắt bên hông, và một con đường phía trước mà chưa ai từng đặt chân qua."
+    ] },
+  { id: "n2", title: "Nhật Ký Phù Thủy Tập Sự", author: "Thanh Vy", translator: "Mộc Lan", genres: ["Phép thuật", "Đời thường"], rating: "4.6", chaptersCount: 88, status: "Hoàn thành", reads: "540K", color: "oklch(55% 0.1 340)", releaseDays: [],
+    synopsis: "Một phù thủy tập sự vụng về ghi lại hành trình học phép thuật đầy dở khóc dở cười của mình tại học viện phép thuật cổ.",
+    excerpt: [
+      "Ngày thứ ba ở Học Viện Phép Thuật, và mình đã làm cháy xém lông mày của thầy dạy Bùa Chú — lần thứ hai. Thầy chỉ thở dài, còn mình thì ước gì sàn nhà có thể nuốt chửng mình ngay lúc đó.",
+      "Cuốn sách phép mình mượn ở thư viện có vẻ... không thích mình cho lắm. Nó cứ tự lật sang trang khác mỗi khi mình định đọc thần chú triệu hồi, như thể đang cố bảo vệ mình khỏi chính bản thân mình.",
+      "Nhưng dù có vụng về đến đâu, mỗi tối nhìn ánh sáng nhỏ xíu lơ lửng trên đầu ngón tay — thứ ánh sáng đầu tiên mình tự tạo ra được — mình lại thấy có lẽ con đường phù thủy này, dù gập ghềnh, vẫn đáng để đi tiếp."
+    ] },
+  { id: "n3", title: "Đế Chế Bóng Đêm", author: "Vũ Trọng Khải", translator: "Hắc Ảnh", genres: ["Dị giới", "Chính kịch"], rating: "4.9", chaptersCount: 210, status: "Đang ra", reads: "1.2M", color: "oklch(48% 0.1 25)", releaseDays: [2, 6],
+    synopsis: "Khi ánh sáng cuối cùng lụi tàn, một đế chế mới trỗi dậy từ bóng tối — và chỉ một người có thể ngăn nó lan rộng.",
+    excerpt: [
+      "Ánh sáng cuối cùng của Vương Đô tắt lịm vào lúc nửa đêm, không một tiếng động, như thể chính bóng tối cũng biết giữ im lặng trước khoảnh khắc lịch sử sang trang.",
+      "Trên ngai vàng đổ nát, kẻ mang vương miện bóng tối ngồi xuống, và cả lục địa — dù chưa hay biết — đã bắt đầu đếm ngược cho một trật tự mới.",
+      "Chỉ còn một người đứng giữa ranh giới của ánh sáng và sự lụi tàn ấy, mang theo lời thề mà chính người đó cũng không chắc liệu mình có đủ sức giữ trọn."
+    ] },
+  { id: "n4", title: "Tiệm Trà Của Yêu Tinh", author: "Bùi Anh Thư", translator: "Trà Chiều", genres: ["Đời thường", "Kỳ ảo"], rating: "4.7", chaptersCount: 64, status: "Đang ra", reads: "410K", color: "oklch(54% 0.08 150)", releaseDays: [4],
+    synopsis: "Một quán trà nhỏ nơi yêu tinh và con người cùng ngồi lại, chia sẻ những câu chuyện không thể kể ở nơi khác.",
+    excerpt: [
+      "Tiệm trà nhỏ nằm nép mình cuối con hẻm không tên, nơi duy nhất trong thị trấn có mùi trà sen thoang thoảng hòa lẫn với thứ mùi hương lạ — hơi ngọt, hơi cũ, như mùi của những câu chuyện đã kể đi kể lại nhiều lần.",
+      "Chủ quán là một yêu tinh già với đôi tai nhọn giấu dưới vành mũ rộng, pha trà bằng đôi tay chậm rãi như thể thời gian không có ý nghĩa gì trong bốn bức tường gỗ này.",
+      "Khách đến đây không chỉ để uống trà. Họ đến để ngồi xuống, thở ra, và kể lại một điều gì đó họ chưa từng dám nói với ai — biết rằng tách trà trước mặt sẽ nguội, nhưng câu chuyện thì sẽ được giữ lại."
+    ] },
+  { id: "n5", title: "Học Viện Kiếm Thuật Thứ Chín", author: "Ngọc Hà", translator: "Cửu Kiếm", genres: ["Học đường", "Hành động"], rating: "4.5", chaptersCount: 97, status: "Đang ra", reads: "365K", color: "oklch(50% 0.09 210)", releaseDays: [1, 3],
+    synopsis: "Ngôi trường kiếm thuật cuối cùng còn sót lại sau đại chiến, nơi những học viên yếu nhất phải học cách sống sót.",
+    excerpt: [
+      "Học Viện Kiếm Thuật Thứ Chín là ngôi trường cuối cùng còn đứng vững sau đại chiến — không phải vì nó mạnh nhất, mà vì nó là nơi duy nhất người ta còn nhớ để xây lại.",
+      "Những học viên ở đây không được chọn vì tài năng. Họ là những người bị bỏ lại, những thanh kiếm gãy chưa kịp rèn lại, được ném vào một sân tập đầy cát và mồ hôi để học lại từ đầu ý nghĩa của hai chữ 'sinh tồn'.",
+      "Tiếng gỗ va vào gỗ vang lên từ sáng sớm. Không ai ở đây tin vào phép màu — họ chỉ tin vào từng nhát kiếm lặp lại đến khi cơ thể nhớ trước cả khi đầu óc kịp nghĩ."
+    ] },
+  { id: "n6", title: "Hành Trình Về Phía Vô Cực", author: "Lê Gia Bảo", translator: "Vô Cực", genres: ["Khoa huyễn", "Phiêu lưu"], rating: "4.4", chaptersCount: 56, status: "Đang ra", reads: "298K", color: "oklch(50% 0.09 300)", releaseDays: [0],
+    synopsis: "Con tàu cuối cùng rời Trái Đất mang theo hy vọng cuối cùng của nhân loại — và một bí mật không ai được biết.",
+    excerpt: [
+      "Con tàu rời quỹ đạo Trái Đất lúc 4 giờ 17 phút sáng, không pháo hoa, không diễn văn — chỉ có tiếng đếm ngược khô khốc và hàng nghìn ô cửa tối đen dõi theo từ mặt đất.",
+      "Trong khoang lạnh, thuyền trưởng nhìn tấm bản đồ sao đã cũ, nơi đích đến được đánh dấu bằng một dấu chấm hỏi thay vì tọa độ, và tự hỏi liệu nhân loại có đang tìm một ngôi nhà mới, hay chỉ đang chạy trốn khỏi ngôi nhà cũ.",
+      "Không ai trên tàu biết chắc điều gì đang chờ ở phía cuối hành trình. Nhưng tất cả đều biết: quay đầu lại không còn là một lựa chọn."
+    ] }
+].map(n => ({ ...n, chapterList: buildChapters() }));
+
+function tagHtml(g) { return `<span class="tag">${g}</span>`; }
+
+function renderHome() {
+  const hero = novels[2];
+  document.getElementById("hero-cover").style.background = hero.color;
+  document.getElementById("hero-cover-title").textContent = hero.title;
+  document.getElementById("hero-genres").innerHTML = hero.genres.map(tagHtml).join("");
+  document.getElementById("hero-title").textContent = hero.title;
+  document.getElementById("hero-synopsis").textContent = hero.synopsis;
+  document.getElementById("hero-meta").textContent = `${hero.chaptersCount} chương · ${hero.status}`;
+  document.getElementById("hero-open").onclick = () => showDetail(hero.id);
+  document.getElementById("hero-open-2").onclick = () => showDetail(hero.id);
+
+  document.getElementById("novel-grid").innerHTML = novels.map(n => `
+    <div class="novel-card" onclick="showDetail('${n.id}')">
+      <div class="cover" style="width: 100%; aspect-ratio: 3/4.3; background: ${n.color}; margin-bottom: 10px;">
+        <div class="cover-title" style="font-size: 14px;">${n.title}</div>
+      </div>
+      <div style="font-size: 14px; font-weight: 600; line-height: 1.3; margin-bottom: 4px;">${n.title}</div>
+      <div style="font-size: 12px; color: var(--ink-soft); display: flex; align-items: center; gap: 5px;">
+        ${STAR} ${n.rating} · ${n.chaptersCount} chương
+      </div>
+    </div>
+  `).join("");
+
+  const ranked = [...novels].sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
+  document.getElementById("rank-list").innerHTML = ranked.map((n, i) => `
+    <div class="rank-row" style="display: flex; align-items: center; gap: 18px; padding: 14px 20px; border-bottom: 1px solid var(--line); cursor: pointer;" onclick="showDetail('${n.id}')">
+      <span style="font-family: 'Newsreader', serif; font-size: 20px; font-weight: 600; color: var(--ink-soft); width: 24px;">${i + 1}</span>
+      <div class="cover" style="width: 40px; height: 56px; background: ${n.color};"></div>
+      <div style="flex: 1;">
+        <div style="font-size: 14.5px; font-weight: 600;">${n.title}</div>
+        <div style="font-size: 12.5px; color: var(--ink-soft);">${n.author}</div>
+      </div>
+      <div style="display: flex; gap: 6px;">${n.genres.map(tagHtml).join("")}</div>
+      <div style="font-size: 13px; color: var(--ink-soft); width: 90px; text-align: right;">${n.reads} lượt đọc</div>
+    </div>
+  `).join("");
+}
+
+function renderDetail(n) {
+  document.getElementById("detail-cover").style.background = n.color;
+  document.getElementById("detail-cover-title").textContent = n.title;
+  document.getElementById("detail-genres").innerHTML = n.genres.map(tagHtml).join("") +
+    `<span class="tag" style="color: var(--gold); background: var(--gold-tint);">${n.status}</span>`;
+  document.getElementById("detail-title").textContent = n.title;
+  document.getElementById("detail-byline").innerHTML = `Tác giả <b style="color: var(--ink);">${n.author}</b> · Dịch giả <b style="color: var(--ink);">${n.translator}</b>`;
+  document.getElementById("detail-rating").textContent = n.rating;
+  document.getElementById("detail-count").textContent = `· ${n.chaptersCount} chương`;
+  document.getElementById("detail-synopsis").textContent = n.synopsis;
+  document.getElementById("detail-read-from-start").onclick = () => showReader(n.id, 1);
+
+  document.getElementById("chapter-list").innerHTML = n.chapterList.map(c => {
+    const unlocked = c.free || unlockedChapters.has(`${n.id}:${c.num}`);
+    let tag;
+    if (c.free) {
+      tag = `<span style="font-size: 12px; font-weight: 600; color: color-mix(in oklab, var(--accent) 70%, black); background: var(--accent-tint); padding: 4px 10px; border-radius: 2px;">Miễn phí</span>`;
+    } else if (unlocked) {
+      tag = `<span style="font-size: 12px; font-weight: 600; color: color-mix(in oklab, var(--accent) 70%, black); background: var(--accent-tint); padding: 4px 10px; border-radius: 2px;">Đã mở khóa</span>`;
+    } else {
+      tag = `<span style="display: flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; color: var(--gold);">${COIN} ${c.price} xu</span>`;
+    }
+    return `
+    <div class="chapter-row" style="display: flex; align-items: center; gap: 16px; padding: 13px 20px; border-bottom: 1px solid var(--line);" onclick="openChapter('${n.id}', ${c.num})">
+      <span style="font-size: 13.5px; color: var(--ink-soft); width: 30px;">${c.num}</span>
+      <span style="flex: 1; font-size: 14px; font-weight: 500;">${c.title}</span>
+      ${tag}
+    </div>
+  `;
+  }).join("");
+}
+
+/* ---------- READER ---------- */
+
+const THEME_MAP = {
+  light: { bg: "#faf6ef", fg: "#241f19", sub: "#5b544a", chrome: "#faf6ef", border: "#e7ddc9" },
+  dark:  { bg: "#211f1b", fg: "#eee8db", sub: "#a89f8e", chrome: "#1a1815", border: "#39352d" },
+  sepia: { bg: "#f2e8d5", fg: "#3c2f20", sub: "#7a6a4f", chrome: "#ecdfc4", border: "#ddc9a0" }
+};
+const FONT_MAP = { small: "15px", medium: "17.5px", large: "20px" };
+
+let readerNovelId = null;
+let readerChapterNum = 1;
+let readerFontSize = "medium";
+let readerTheme = "light";
+let readerPanelOpen = false;
+
+function showReader(novelId, chapterNum) {
+  readerNovelId = novelId;
+  readerChapterNum = chapterNum;
+  readerPanelOpen = false;
+  document.getElementById("view-home").style.display = "none";
+  document.getElementById("view-detail").style.display = "none";
+  document.getElementById("view-reader").style.display = "block";
+  document.getElementById("view-account").style.display = "none";
+  document.getElementById("view-wallet").style.display = "none";
+  document.getElementById("view-explore").style.display = "none";
+  document.getElementById("view-rankings").style.display = "none";
+  document.getElementById("view-schedule").style.display = "none";
+  document.getElementById("main-header").style.display = "none";
+  document.getElementById("main-footer").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "";
+  renderReader();
+  window.scrollTo(0, 0);
+}
+
+function backToDetailFromReader() {
+  const id = readerNovelId;
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  showDetail(id || (novels[2] && novels[2].id));
+}
+
+function prevChapter() {
+  readerChapterNum = Math.max(1, readerChapterNum - 1);
+  renderReader();
+  window.scrollTo(0, 0);
+}
+function nextChapter() {
+  const novel = novels.find(n => n.id === readerNovelId) || novels[0];
+  readerChapterNum = Math.min(novel.chapterList.length, readerChapterNum + 1);
+  renderReader();
+  window.scrollTo(0, 0);
+}
+function togglePanel() {
+  readerPanelOpen = !readerPanelOpen;
+  document.getElementById("reader-panel").style.display = readerPanelOpen ? "" : "none";
+  renderReaderOptions();
+}
+function setFontSize(size) {
+  readerFontSize = size;
+  renderReader();
+}
+function setTheme(theme) {
+  readerTheme = theme;
+  renderReader();
+}
+
+function renderReaderOptions() {
+  const theme = THEME_MAP[readerTheme];
+
+  const sizeOpts = [
+    { key: "small", label: "Nhỏ" },
+    { key: "medium", label: "Vừa" },
+    { key: "large", label: "Lớn" }
+  ];
+  document.getElementById("fontsize-options").innerHTML = sizeOpts.map(o => `
+    <button class="opt-pill ${readerFontSize === o.key ? "selected" : ""}" onclick="setFontSize('${o.key}')">${o.label}</button>
+  `).join("");
+
+  const themeOpts = [
+    { key: "light", label: "Sáng" },
+    { key: "dark", label: "Tối" },
+    { key: "sepia", label: "Sepia" }
+  ];
+  document.getElementById("theme-options").innerHTML = themeOpts.map(o => `
+    <button class="opt-pill ${readerTheme === o.key ? "selected" : ""}" onclick="setTheme('${o.key}')">${o.label}</button>
+  `).join("");
+
+  document.getElementById("panel-label-size").style.color = theme.sub;
+  document.getElementById("panel-label-theme").style.color = theme.sub;
+  document.getElementById("reader-panel").style.background = theme.chrome;
+  document.getElementById("reader-panel").style.borderBottom = `1px solid ${theme.border}`;
+}
+
+function renderReader() {
+  const novel = novels.find(n => n.id === readerNovelId) || novels[0];
+  const total = novel.chapterList.length;
+  const chapterIndex = Math.min(Math.max(readerChapterNum, 1), total);
+  readerChapterNum = chapterIndex;
+  const chapter = novel.chapterList[chapterIndex - 1];
+  const theme = THEME_MAP[readerTheme];
+  const fontPx = FONT_MAP[readerFontSize];
+  const progressPct = Math.round((chapterIndex / total) * 100);
+
+  document.body.style.background = theme.bg;
+
+  document.getElementById("reader-topbar").style.background = theme.chrome;
+  document.getElementById("reader-topbar").style.borderBottom = `1px solid ${theme.border}`;
+  document.getElementById("reader-topbar-divider").style.background = theme.border;
+  document.getElementById("reader-back-btn").style.color = theme.sub;
+  document.getElementById("reader-panel-btn").style.color = theme.sub;
+  document.getElementById("reader-novel-title").style.color = theme.fg;
+  document.getElementById("reader-chapter-label").style.color = theme.sub;
+  document.getElementById("reader-progress-track").style.background = theme.border;
+
+  document.getElementById("reader-novel-title").textContent = novel.title;
+  document.getElementById("reader-chapter-label").textContent = chapter.title;
+  document.getElementById("reader-progress-fill").style.width = progressPct + "%";
+
+  document.getElementById("view-reader").style.background = theme.bg;
+  document.getElementById("reader-chapter-title").textContent = chapter.title;
+  document.getElementById("reader-chapter-title").style.color = theme.fg;
+
+  document.getElementById("reader-content").style.fontSize = fontPx;
+  document.getElementById("reader-content").style.color = theme.fg;
+  document.getElementById("reader-content").innerHTML = novel.excerpt.map(p => `<p style="margin: 0 0 20px;">${p}</p>`).join("");
+
+  document.getElementById("reader-position-label").textContent = `Chương ${chapterIndex} / ${total}`;
+  document.getElementById("reader-position-label").style.color = theme.sub;
+
+  const prevBtn = document.getElementById("reader-prev-btn");
+  const nextBtn = document.getElementById("reader-next-btn");
+  prevBtn.classList.toggle("disabled", chapterIndex <= 1);
+  nextBtn.classList.toggle("disabled", chapterIndex >= total);
+  prevBtn.style.background = theme.chrome;
+  nextBtn.style.background = theme.chrome;
+  prevBtn.style.color = theme.fg;
+  nextBtn.style.color = theme.fg;
+  prevBtn.style.borderColor = theme.border;
+  nextBtn.style.borderColor = theme.border;
+
+  renderReaderOptions();
+}
+
+function showHome() {
+  document.getElementById("view-home").style.display = "";
+  document.getElementById("view-detail").style.display = "none";
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("view-account").style.display = "none";
+  document.getElementById("view-wallet").style.display = "none";
+  document.getElementById("view-explore").style.display = "none";
+  document.getElementById("view-rankings").style.display = "none";
+  document.getElementById("view-schedule").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  document.body.style.background = "";
+  window.scrollTo(0, 0);
+}
+function showDetail(id) {
+  const n = novels.find(x => x.id === id) || novels[0];
+  renderDetail(n);
+  document.getElementById("view-home").style.display = "none";
+  document.getElementById("view-detail").style.display = "";
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("view-account").style.display = "none";
+  document.getElementById("view-wallet").style.display = "none";
+  document.getElementById("view-explore").style.display = "none";
+  document.getElementById("view-rankings").style.display = "none";
+  document.getElementById("view-schedule").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  document.body.style.background = "";
+  window.scrollTo(0, 0);
+}
+
+/* ---------- ACCOUNT ---------- */
+
+const accountName = "Ngọc Anh";
+const accountCoins = 128;
+const readingProgress = [
+  { novelId: "n1", chapterNum: 4 },
+  { novelId: "n4", chapterNum: 2 },
+  { novelId: "n6", chapterNum: 7 }
+];
+const followedIds = ["n1", "n2", "n3", "n5"];
+
+function renderAccount() {
+  document.getElementById("account-avatar").textContent = accountName.trim().charAt(0);
+  document.getElementById("account-name").textContent = accountName;
+  document.getElementById("account-coins").textContent = `${coinBalance} xu`;
+
+  document.getElementById("account-reading-list").innerHTML = readingProgress.map(p => {
+    const n = novels.find(x => x.id === p.novelId);
+    if (!n) return "";
+    const total = n.chapterList.length;
+    const pct = Math.round((p.chapterNum / total) * 100);
+    return `
+      <div class="reading-row" style="display: flex; align-items: center; gap: 16px; padding: 14px 20px; border-bottom: 1px solid var(--line);" onclick="showReader('${n.id}', ${p.chapterNum})">
+        <div class="cover" style="width: 44px; height: 62px; background: ${n.color}; flex-shrink: 0;"></div>
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-size: 14.5px; font-weight: 600; margin-bottom: 8px;">${n.title}</div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="flex: 1; max-width: 220px; height: 4px; background: var(--line); border-radius: 2px; overflow: hidden;">
+              <div style="height: 100%; background: var(--accent); width: ${pct}%;"></div>
+            </div>
+            <span style="font-size: 12px; color: var(--ink-soft); white-space: nowrap;">Chương ${p.chapterNum}/${total}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  document.getElementById("account-following-grid").innerHTML = followedIds.map(id => {
+    const n = novels.find(x => x.id === id);
+    if (!n) return "";
+    return `
+      <div class="novel-card" onclick="showDetail('${n.id}')">
+        <div class="cover" style="width: 100%; aspect-ratio: 3/4.3; background: ${n.color}; margin-bottom: 10px;">
+          <div class="cover-title" style="font-size: 14px;">${n.title}</div>
+        </div>
+        <div style="font-size: 14px; font-weight: 600; line-height: 1.3; margin-bottom: 4px;">${n.title}</div>
+        <div style="font-size: 12px; color: var(--ink-soft); display: flex; align-items: center; gap: 5px;">
+          ${STAR} ${n.rating} · ${n.chaptersCount} chương
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+function showAccount() {
+  renderAccount();
+  document.getElementById("view-home").style.display = "none";
+  document.getElementById("view-detail").style.display = "none";
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("view-account").style.display = "block";
+  document.getElementById("view-wallet").style.display = "none";
+  document.getElementById("view-explore").style.display = "none";
+  document.getElementById("view-rankings").style.display = "none";
+  document.getElementById("view-schedule").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  document.body.style.background = "";
+  window.scrollTo(0, 0);
+}
+
+/* ---------- WALLET ---------- */
+
+let coinBalance = accountCoins;
+
+const topupPackages = [
+  { amount: 20000, coins: 20, bonusLabel: null },
+  { amount: 50000, coins: 50, bonusLabel: null },
+  { amount: 100000, coins: 105, bonusLabel: "+5%" },
+  { amount: 200000, coins: 220, bonusLabel: "+10%" }
+];
+let selectedPackageIndex = 0;
+
+const transactions = [
+  { type: "spend", label: "Mở khóa Chương 6: Bóng tối phía sau — Hành Trình Về Phía Vô Cực", amount: -4 },
+  { type: "topup", label: "Nạp 50.000đ · +50 xu", amount: 50 },
+  { type: "spend", label: "Mở khóa Chương 3: Lời thề cũ — Tiệm Trà Của Yêu Tinh", amount: -4 },
+  { type: "topup", label: "Nạp 20.000đ · +20 xu", amount: 20 }
+];
+
+const unlockedChapters = new Set(["n6:7"]);
+
+function formatVND(amount) {
+  return amount.toLocaleString("vi-VN") + "đ";
+}
+
+function updateHeaderCoins() {
+  document.getElementById("header-coins").textContent = `${coinBalance} xu`;
+}
+
+function openChapter(novelId, chapterNum) {
+  const n = novels.find(x => x.id === novelId);
+  if (!n) return;
+  const c = n.chapterList[chapterNum - 1];
+  const key = `${novelId}:${chapterNum}`;
+  if (c.free || unlockedChapters.has(key)) {
+    showReader(novelId, chapterNum);
+    return;
+  }
+  if (coinBalance >= c.price) {
+    coinBalance -= c.price;
+    unlockedChapters.add(key);
+    transactions.unshift({ type: "spend", label: `Mở khóa ${c.title} — ${n.title}`, amount: -c.price });
+    updateHeaderCoins();
+    showReader(novelId, chapterNum);
+  } else {
+    showWallet(`Bạn cần thêm ${c.price - coinBalance} xu để mở khóa "${c.title}" — ${n.title}.`);
+  }
+}
+
+function renderWallet() {
+  document.getElementById("wallet-balance").textContent = `${coinBalance} xu`;
+
+  document.getElementById("topup-grid").innerHTML = topupPackages.map((pkg, i) => `
+    <div class="topup-card ${i === selectedPackageIndex ? "selected" : ""}" onclick="selectPackage(${i})">
+      ${pkg.bonusLabel ? `<span class="topup-bonus">${pkg.bonusLabel}</span>` : ""}
+      <div style="font-size: 17px; font-weight: 600;">${formatVND(pkg.amount)}</div>
+      <div style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-soft);">
+        ${COIN} ${pkg.coins} xu
+      </div>
+    </div>
+  `).join("");
+
+  document.getElementById("tx-list").innerHTML = transactions.map(tx => `
+    <div class="tx-row" style="display: flex; align-items: center; gap: 16px; padding: 13px 20px; border-bottom: 1px solid var(--line);">
+      <span style="flex: 1; font-size: 14px;">${tx.label}</span>
+      <span style="font-size: 14px; font-weight: 600; color: ${tx.amount > 0 ? "color-mix(in oklab, var(--accent) 70%, black)" : "var(--ink-soft)"};">${tx.amount > 0 ? "+" : ""}${tx.amount} xu</span>
+    </div>
+  `).join("");
+}
+
+function selectPackage(i) {
+  selectedPackageIndex = i;
+  document.getElementById("topup-success").style.display = "none";
+  renderWallet();
+}
+
+function topUp() {
+  const pkg = topupPackages[selectedPackageIndex];
+  coinBalance += pkg.coins;
+  transactions.unshift({ type: "topup", label: `Nạp ${formatVND(pkg.amount)} · +${pkg.coins} xu`, amount: pkg.coins });
+  updateHeaderCoins();
+  renderWallet();
+  const successEl = document.getElementById("topup-success");
+  successEl.textContent = `Nạp thành công! Đã cộng ${pkg.coins} xu.`;
+  successEl.style.display = "";
+}
+
+function showWallet(notice) {
+  renderWallet();
+  document.getElementById("topup-success").style.display = "none";
+  const noticeEl = document.getElementById("wallet-notice");
+  if (notice) {
+    noticeEl.textContent = notice;
+    noticeEl.style.display = "";
+  } else {
+    noticeEl.style.display = "none";
+  }
+  document.getElementById("view-home").style.display = "none";
+  document.getElementById("view-detail").style.display = "none";
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("view-account").style.display = "none";
+  document.getElementById("view-wallet").style.display = "block";
+  document.getElementById("view-explore").style.display = "none";
+  document.getElementById("view-rankings").style.display = "none";
+  document.getElementById("view-schedule").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  document.body.style.background = "";
+  window.scrollTo(0, 0);
+}
+
+/* ---------- EXPLORE ---------- */
+
+let exploreGenre = "all";
+let exploreSort = "rating";
+
+function parseReads(str) {
+  const num = parseFloat(str);
+  if (str.includes("M")) return num * 1000000;
+  if (str.includes("K")) return num * 1000;
+  return num;
+}
+
+function setExploreGenre(g) {
+  exploreGenre = g;
+  renderExplore();
+}
+function setExploreSort(s) {
+  exploreSort = s;
+  renderExplore();
+}
+
+function renderExplore() {
+  const genreList = [];
+  novels.forEach(n => n.genres.forEach(g => { if (!genreList.includes(g)) genreList.push(g); }));
+  const chips = [{ key: "all", label: "Tất cả" }, ...genreList.map(g => ({ key: g, label: g }))];
+  document.getElementById("explore-genre-chips").innerHTML = chips.map(c => `
+    <button class="filter-chip ${exploreGenre === c.key ? "selected" : ""}" onclick="setExploreGenre('${c.key}')">${c.label}</button>
+  `).join("");
+  document.getElementById("explore-sort-select").value = exploreSort;
+
+  let list = exploreGenre === "all" ? novels.slice() : novels.filter(n => n.genres.includes(exploreGenre));
+
+  if (exploreSort === "rating") {
+    list.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
+  } else if (exploreSort === "reads") {
+    list.sort((a, b) => parseReads(b.reads) - parseReads(a.reads));
+  } else if (exploreSort === "updated") {
+    const orderIndex = id => novels.findIndex(n => n.id === id);
+    list.sort((a, b) => orderIndex(a.id) - orderIndex(b.id));
+  }
+
+  document.getElementById("explore-grid").innerHTML = list.map(n => `
+    <div class="novel-card" onclick="showDetail('${n.id}')">
+      <div class="cover" style="width: 100%; aspect-ratio: 3/4.3; background: ${n.color}; margin-bottom: 10px;">
+        <div class="cover-title" style="font-size: 14px;">${n.title}</div>
+      </div>
+      <div style="font-size: 14px; font-weight: 600; line-height: 1.3; margin-bottom: 4px;">${n.title}</div>
+      <div style="font-size: 12px; color: var(--ink-soft); display: flex; align-items: center; gap: 5px;">
+        ${STAR} ${n.rating} · ${n.chaptersCount} chương
+      </div>
+    </div>
+  `).join("");
+
+  document.getElementById("explore-grid").style.display = list.length ? "grid" : "none";
+  document.getElementById("explore-empty").style.display = list.length ? "none" : "block";
+}
+
+function showExplore() {
+  renderExplore();
+  document.getElementById("view-home").style.display = "none";
+  document.getElementById("view-detail").style.display = "none";
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("view-account").style.display = "none";
+  document.getElementById("view-wallet").style.display = "none";
+  document.getElementById("view-explore").style.display = "block";
+  document.getElementById("view-rankings").style.display = "none";
+  document.getElementById("view-schedule").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  document.body.style.background = "";
+  window.scrollTo(0, 0);
+}
+
+/* ---------- RANKINGS ---------- */
+
+let rankingsTab = "rating";
+
+const RANKINGS_TABS = [
+  { key: "rating", label: "Theo đánh giá" },
+  { key: "reads", label: "Theo lượt đọc" },
+  { key: "newest", label: "Truyện mới" }
+];
+
+function setRankingsTab(key) {
+  rankingsTab = key;
+  renderRankings();
+}
+
+function renderRankings() {
+  document.getElementById("rankings-tabs").innerHTML = RANKINGS_TABS.map(t => `
+    <button class="filter-chip ${rankingsTab === t.key ? "selected" : ""}" onclick="setRankingsTab('${t.key}')">${t.label}</button>
+  `).join("");
+
+  let list = novels.slice();
+  if (rankingsTab === "rating") {
+    list.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
+  } else if (rankingsTab === "reads") {
+    list.sort((a, b) => parseReads(b.reads) - parseReads(a.reads));
+  } else if (rankingsTab === "newest") {
+    const orderIndex = id => novels.findIndex(n => n.id === id);
+    list.sort((a, b) => orderIndex(a.id) - orderIndex(b.id));
+  }
+
+  document.getElementById("rankings-list").innerHTML = list.map((n, i) => {
+    let metric;
+    if (rankingsTab === "rating") {
+      metric = `<span style="display: flex; align-items: center; gap: 5px; font-size: 14px; font-weight: 700;">${STAR} ${n.rating}</span>`;
+    } else if (rankingsTab === "reads") {
+      metric = `<span style="font-size: 13px; color: var(--ink-soft);">${n.reads} lượt đọc</span>`;
+    } else {
+      metric = `<span class="tag" style="color: var(--gold); background: var(--gold-tint);">${n.status}</span>`;
+    }
+    return `
+    <div class="rank-row" style="display: flex; align-items: center; gap: 18px; padding: 14px 20px; border-bottom: 1px solid var(--line); cursor: pointer;" onclick="showDetail('${n.id}')">
+      <span style="font-family: 'Newsreader', serif; font-size: 20px; font-weight: 600; color: var(--ink-soft); width: 24px;">${i + 1}</span>
+      <div class="cover" style="width: 40px; height: 56px; background: ${n.color};"></div>
+      <div style="flex: 1;">
+        <div style="font-size: 14.5px; font-weight: 600;">${n.title}</div>
+        <div style="font-size: 12.5px; color: var(--ink-soft);">${n.author}</div>
+      </div>
+      <div style="display: flex; gap: 6px;">${n.genres.map(tagHtml).join("")}</div>
+      <div style="width: 110px; text-align: right;">${metric}</div>
+    </div>
+  `;
+  }).join("");
+}
+
+function showRankings() {
+  renderRankings();
+  document.getElementById("view-home").style.display = "none";
+  document.getElementById("view-detail").style.display = "none";
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("view-account").style.display = "none";
+  document.getElementById("view-wallet").style.display = "none";
+  document.getElementById("view-explore").style.display = "none";
+  document.getElementById("view-rankings").style.display = "block";
+  document.getElementById("view-schedule").style.display = "none";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  document.body.style.background = "";
+  window.scrollTo(0, 0);
+}
+
+/* ---------- SCHEDULE ---------- */
+
+const DAYS = [
+  { key: 1, label: "Thứ 2" },
+  { key: 2, label: "Thứ 3" },
+  { key: 3, label: "Thứ 4" },
+  { key: 4, label: "Thứ 5" },
+  { key: 5, label: "Thứ 6" },
+  { key: 6, label: "Thứ 7" },
+  { key: 0, label: "Chủ nhật" }
+];
+
+function renderSchedule() {
+  const todayKey = new Date().getDay();
+  document.getElementById("schedule-grid").innerHTML = DAYS.map(d => {
+    const dayNovels = novels.filter(n => n.releaseDays && n.releaseDays.includes(d.key));
+    const isToday = d.key === todayKey;
+    const novelsHtml = dayNovels.length
+      ? dayNovels.map(n => `
+        <div class="schedule-novel" onclick="showDetail('${n.id}')">
+          <div class="cover" style="width: 28px; height: 40px; background: ${n.color}; flex-shrink: 0;"></div>
+          <span class="schedule-novel-title" style="font-size: 12.5px; font-weight: 600; line-height: 1.3;">${n.title}</span>
+        </div>
+      `).join("")
+      : `<span class="schedule-empty">Không có chương mới</span>`;
+    return `
+      <div class="schedule-day ${isToday ? "today" : ""}">
+        <div class="schedule-day-label">${d.label}${isToday ? " · Hôm nay" : ""}</div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">${novelsHtml}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+function showSchedule() {
+  renderSchedule();
+  document.getElementById("view-home").style.display = "none";
+  document.getElementById("view-detail").style.display = "none";
+  document.getElementById("view-reader").style.display = "none";
+  document.getElementById("view-account").style.display = "none";
+  document.getElementById("view-wallet").style.display = "none";
+  document.getElementById("view-explore").style.display = "none";
+  document.getElementById("view-rankings").style.display = "none";
+  document.getElementById("view-schedule").style.display = "block";
+  document.getElementById("reader-topbar").style.display = "none";
+  document.getElementById("reader-panel").style.display = "none";
+  document.getElementById("main-header").style.display = "";
+  document.getElementById("main-footer").style.display = "";
+  document.body.style.background = "";
+  window.scrollTo(0, 0);
+}
+
+updateHeaderCoins();
+renderHome();
+showHome();
+</script>
+</body>
+</html>
